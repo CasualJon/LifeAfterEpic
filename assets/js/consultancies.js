@@ -5,6 +5,7 @@ console.log("Testing JS triggering on page");
 
 var xhttpConf = new XMLHttpRequest();
 xhttpConf.onreadystatechange = function() {
+  console.log("this.readyState: " + this.readyState + " && this.status: " + this.status);
     if (this.readyState == 4 && this.status == 200) {
       // Typical action to be performed when the document is ready:
       //document.getElementById("confirmedFirms").innerHTML = xhttp.responseText;
