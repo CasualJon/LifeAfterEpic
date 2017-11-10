@@ -15,5 +15,5 @@ xhttpConf.onreadystatechange = function() {
     }
 };
 console.log("Out of .onsreadystatechange function");
-xhttpConf.open("GET", "../consultancies.json", true);
+xhttpConf.open("GET", "consultancies.json", true);
 xhttpConf.send();

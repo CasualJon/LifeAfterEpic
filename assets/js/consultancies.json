@@ -1,0 +1,28 @@
+{
+  "firms": [
+
+    { "name": "BlueTree Network",
+      "website": "https://www.bluetreenetwork.com/",
+      "logo": "./img/consulting/bluetreenetwork.jpg",
+      "confirmed": true
+    },
+
+    { "name": "Nordic",
+      "website": "https://www.nordicwi.com/",
+      "logo": "./img/consulting/nordic.jpg",
+      "confirmed": true
+    },
+
+    { "name": "The HCI Group",
+      "website": "https://www.thehcigroup.com/",
+      "logo": "./img/consulting/hcigroup.jpg",
+      "confirmed": true
+    },
+
+    { "name": "Huron Consulting Group",
+      "website": "https://www.huronconsultinggroup.com/",
+      "logo": "./img/consulting/huron.jpg",
+      "confirmed": true
+    }
+  ]
+}
