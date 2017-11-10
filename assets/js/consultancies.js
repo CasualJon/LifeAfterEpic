@@ -1,6 +1,8 @@
 //Interacts with consultancies.json to populate tables
 //on lifeafterepic.com/resourcepgs/consulting.html
 
+console.log("Testing JS triggering on page");
+
 var xhttpConf = new XMLHttpRequest();
 xhttpConf.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
