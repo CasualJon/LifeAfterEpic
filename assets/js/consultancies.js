@@ -8,6 +8,7 @@ var firms = [
     logo: "../assets/img/consulting/bluetreenetwork.jpg",
     twitter: "https://twitter.com/BluetreeNetwork",
     linkedin: "https://www.linkedin.com/company/2663341/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Bluetree-Network-EI_IE1010664.11,27.htm",
     confirmed: true
   },
 
@@ -16,6 +17,7 @@ var firms = [
     logo: "../assets/img/consulting/nordic.jpg",
     twitter: "https://twitter.com/nordicwi",
     linkedin: "https://www.linkedin.com/company/819886/",
+    glassdoor:"https://www.glassdoor.com/Reviews/Nordic-Consulting-Partners-Reviews-E1152333.htm",
     confirmed: true
   },
 
@@ -24,6 +26,7 @@ var firms = [
     logo: "../assets/img/consulting/hcigroup.jpg",
     twitter: "https://twitter.com/TheHCIGroup",
     linkedin: "https://www.linkedin.com/company/954937/",
+    glassdoor: "https://www.glassdoor.com/Reviews/the-hci-group-reviews-SRCH_KE0,13.htm",
     confirmed: true
   },
 
@@ -32,14 +35,61 @@ var firms = [
     logo: "../assets/img/consulting/huron.jpg",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/5751/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Huron-Consulting-Group-EI_IE35223.11,33.htm",
+    confirmed: true
+  },
+
+  { name: "Accenture/Sagacious Consultants",
+    website: "http://www.sagaciousconsultants.com/",
+    logo: "../assets.img/consulting/sagacious.jpg",
+    twitter: "https://twitter.com/Accenture",
+    linkedin: "https://www.linkedin.com/company/456960/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Sagacious-Consultants-EI_IE423622.11,32.htm",
+    confirmed: true
+  },
+
+  { name: "Impact Advisors",
+    website: "http://www.impact-advisors.com/",
+    logo: "../assets.img/consulting/sagacious.jpg",
+    twitter: "https://twitter.com/ImpactAdvisors",
+    linkedin: "https://www.linkedin.com/company/218097/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Impact-Advisors-EI_IE765876.11,26.htm",
+    confirmed: true
+  },
+
+  { name: "avaap (fka Falcon Consulting Group)",
+    website: "https://www.avaap.com/",
+    logo: "../assets.img/consulting/avaap.jpg",
+    twitter: "https://twitter.com/avaap_usa",
+    linkedin: "https://www.linkedin.com/company/avaap/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Falcon-Consulting-Group-EI_IE413291.11,34.htm",
+    confirmed: true
+  },
+
+  { name: "Deloitte",
+    website: "https://www2.deloitte.com/us/en.html",
+    logo: "../assets.img/consulting/deloitte.jpg",
+    twitter: "https://twitter.com/DeloitteUS",
+    linkedin: "https://www.linkedin.com/company/1038/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Deloitte-EI_IE2763.11,19.htm",
     confirmed: true
   },
 
   { name: "Santa Rosa Consulting",
     website: "https://www.santarosaconsulting.com/",
-    logo: null,
+    logo: "../assets.img/consulting/santarosa.png",
     twitter: "https://twitter.com/SantaRosaC",
     linkedin: "https://www.linkedin.com/company/390402/",
+    glassdoor: null,
+    confirmed: false
+  },
+
+  { name: "Belmero, Inc.",
+    website: "https://www.belmero.com/",
+    logo: "../assets.img/consulting/belmero.jpeg",
+    twitter: "https://twitter.com/BelmeroInc",
+    linkedin: "https://www.linkedin.com/company/2694331/",
+    glassdoor: null,
     confirmed: false
   }
 ];
@@ -66,9 +116,14 @@ window.onload = function() {
     }
 
     confOutput += "<tr><td scope=\"row\">";
-    confOutput += "<img scr=\"" + randFirms[i].logo +"\" alt=\"" + randFirms[i].name +"\" class=\"img-responsive\"/>";
-    confOutput += "</td><td>";
     confOutput += randFirms[i].name;
+    confOutput += "</td><td>";
+    if (randFirms[i].glassdoor != null) {
+      confOutput += "<a href=\"" + randFirms[i].glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
+    }
+    else {
+      confOutput += "no glassdoor listing"
+    }
     confOutput += "</td><td>";
 
     //Website link (using laptop icon)
@@ -109,9 +164,14 @@ window.onload = function() {
 
 function buildUnconfirmed(obj) {
   unconfOutput += "<tr><td scope=\"row\">";
-  unconfOutput += "<img scr=\"" + obj.logo +"\" alt=\"" + obj.name +"\" class=\"img-responsive\"/>";
-  unconfOutput += "</td><td>";
   unconfOutput += obj.name;
+  unconfOutput += "</td><td>";
+  if (obj.glassdoor != null) {
+    unconfOutput += "<a href=\"" + obj.glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
+  }
+  else {
+    unconfOutput += "no glassdoor listing"
+  }
   unconfOutput += "</td><td>";
 
   //Website link (using laptop icon)
