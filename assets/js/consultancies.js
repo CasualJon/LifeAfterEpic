@@ -46,32 +46,34 @@ var firms = [
 
 var confOutput = "";
 var unconfOutput = "";
+var randFirms = [];
+
 window.onload = function() {
 
-//FIXME - whelp, this shit ain't working... That's enough for tonight
   //Randomize the list of consulting groups for display
-  // for (var i = 0; i < firms.length; i++) {
-  //   var tmp = firms.splice(getRandom(firms.length), 1);
-  //   console.log(tmp);
-  //   firms.push(tmp);
-  // }
+  var cnt = firms.length;
+  for (var i = 0; i < cnt; i++) {
+    var tmp = firms.splice(getRandom(firms.length), 1);
+    randFirms.push(tmp[0]);
+  }
 
-  for (var i = 0; i < firms.length; i++) {
 
-    if (firms[i].confirmed == false) {
-      buildUnconfirmed(firms[i]);
-      // continue;
+  for (var i = 0; i < randFirms.length; i++) {
+
+    if (randFirms[i].confirmed == false) {
+      buildUnconfirmed(randFirms[i]);
+      continue;
     }
 
     confOutput += "<tr><td scope=\"row\">";
-    confOutput += "<img scr=\"" + firms[i].logo +"\" alt=\"" + firms[i].name +"\" class=\"img-responsive\"/>";
+    confOutput += "<img scr=\"" + randFirms[i].logo +"\" alt=\"" + randFirms[i].name +"\" class=\"img-responsive\"/>";
     confOutput += "</td><td>";
-    confOutput += firms[i].name;
+    confOutput += randFirms[i].name;
     confOutput += "</td><td>";
 
     //Website link (using laptop icon)
-    if (firms[i].website != null) {
-      confOutput += "<a href="+ firms[i].website +" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+    if (randFirms[i].website != null) {
+      confOutput += "<a href="+ randFirms[i].website +" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
     }
     else {
       confOutput += " ";
@@ -79,8 +81,8 @@ window.onload = function() {
     confOutput += "</td><td>";
 
     //LinkedIn link (using LinkedIn icon)
-    if (firms[i].linkedin != null) {
-      confOutput += "<a href="+ firms[i].linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    if (randFirms[i].linkedin != null) {
+      confOutput += "<a href="+ randFirms[i].linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
     }
     else {
       confOutput += " ";
@@ -88,8 +90,8 @@ window.onload = function() {
     confOutput += "</td><td>";
 
     //Twitter link (using Twitter icon)
-    if (firms[i].twitter != null) {
-      confOutput += "<a href="+ firms[i].twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    if (randFirms[i].twitter != null) {
+      confOutput += "<a href="+ randFirms[i].twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
     }
     else {
       confOutput += " ";
@@ -141,6 +143,10 @@ function buildUnconfirmed(obj) {
   unconfOutput += "</td></tr>";
 }
 
+
+///////////////////////////////////////
+// Random Number Generation
+///////////////////////////////////////
 function getRandom(num) {
   return Math.floor(Math.random() * num);
 }
