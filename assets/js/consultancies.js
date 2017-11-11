@@ -30,7 +30,7 @@ var firms = [
     confirmed: true
   },
 
-  { name: "Huron Consulting Group",
+  { name: "Huron Consulting Group (Vonlay)",
     website: "https://www.huronconsultinggroup.com/",
     logo: "../assets/img/consulting/huron.jpg",
     twitter: null,
@@ -40,7 +40,7 @@ var firms = [
   },
 
   { name: "Accenture/Sagacious Consultants",
-    website: "http://www.sagaciousconsultants.com/",
+    website: "http://www.sagaciousconsultants.com/index.html",
     logo: "../assets.img/consulting/sagacious.jpg",
     twitter: "https://twitter.com/Accenture",
     linkedin: "https://www.linkedin.com/company/456960/",
@@ -91,6 +91,105 @@ var firms = [
     linkedin: "https://www.linkedin.com/company/2694331/",
     glassdoor: null,
     confirmed: false
+  },
+
+  { name: "Pivot Point Consulting",
+    website: "https://www.http://pivotpointconsulting.com/",
+    logo: "../assets.img/consulting/pivotpoint.jpg",
+    twitter: "https://twitter.com/pivotpc",
+    linkedin: "https://www.linkedin.com/company/pivot-point-consulting-llc/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Pivot-Point-Consulting-EI_IE1141520.11,33.htm",
+    confirmed: true
+  },
+
+  { name: "The Chartis Group (Aspen Advisors)",
+    website: "https://www.chartis.com/services/informatics-and-technology",
+    logo: "../assets.img/consulting/chartisgroup.jpg",
+    twitter: "https://twitter.com/thechartisgroup",
+    linkedin: "https://www.linkedin.com/company/38109/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-The-Chartis-Group-EI_IE301179.11,28.htm",
+    confirmed: false
+  },
+
+  { name: "CTG - Computer Task Group",
+    website: "https://www.ctg.com/",
+    logo: "../assets.img/consulting/ctg.jpg",
+    twitter: "https://twitter.com/CTGinc",
+    linkedin: "https://www.linkedin.com/company/ctginc/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Computer-Task-Group-EI_IE170.11,30.htm",
+    confirmed: true
+  },
+
+  { name: "314e Corporation",
+    website: "http://www.314e.com/",
+    logo: "../assets.img/consulting/314e.jpg",
+    twitter: "https://twitter.com/314e",
+    linkedin: "https://www.linkedin.com/company/314e-corporation/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-314e-EI_IE244845.11,15.htm",
+    confirmed: false
+  },
+
+  { name: "Navagant/McKinnis Consulting (MultiCare)",
+    website: "http://mckinnisconsulting.com/",
+    logo: "../assets.img/consulting/mckinnis.png",
+    twitter: "https://twitter.com/McKinnisCS",
+    linkedin: "https://www.linkedin.com/company/2024512/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-McKinnis-Consulting-Services-EI_IE869657.11,39.htm",
+    confirmed: true
+  },
+
+  { name: "Cumberland Consulting Group",
+    website: "http://www.cumberlandcg.com/",
+    logo: "../assets.img/consulting/cumberland.png",
+    twitter: "https://twitter.com/cumberlandcg",
+    linkedin: "https://www.linkedin.com/company/cumberland-consulting-group/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Cumberland-Consulting-Group-EI_IE256042.11,38.htm",
+    confirmed: true
+  },
+
+  { name: "Optimum Healthcare IT",
+    website: "https://www.optimumhit.com/",
+    logo: "../assets.img/consulting/optimum.jpg",
+    twitter: "https://twitter.com/OptimumHIT",
+    linkedin: "https://www.linkedin.com/company/optimum-healthcare-it/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Optimum-Healthcare-IT-EI_IE855416.11,32.htm",
+    confirmed: true
+  },
+
+  { name: "Umbrella Health IT",
+    website: "http://www.umbrellahealthit.com/",
+    logo: "../assets.img/consulting/umbrella.png",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/10831208/",
+    glassdoor: null,
+    confirmed: false
+  },
+
+  { name: "Stoltenberg Consulting",
+    website: "https://www.stoltenberg.com/",
+    logo: "../assets.img/consulting/stoltenberg.jpg",
+    twitter: "https://twitter.com/StoltenbergCon",
+    linkedin: "https://www.linkedin.com/company/108130/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Stoltenberg-Consulting-EI_IE833775.11,33.htm",
+    confirmed: false
+  },
+
+  { name: "Orchestrate Healthcare",
+    website: "http://www.orchestratehealthcare.com/",
+    logo: "../assets.img/consulting/orchestrate.jpeg",
+    twitter: "https://twitter.com/OrchestrateHC",
+    linkedin: "https://www.linkedin.com/company/orchestrate-healthcare/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Orchestrate-Healthcare-EI_IE521478.11,33.htm",
+    confirmed: true
+  },
+
+  { name: "Hayes Management Consulting",
+    website: "http://www.hayesmanagement.com/",
+    logo: "../assets.img/consulting/hayes.jpg",
+    twitter: "https://twitter.com/HayesManagement",
+    linkedin: "https://www.linkedin.com/company/38915/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Hayes-Management-Consulting-EI_IE667365.11,38.htm",
+    confirmed: true
   }
 ];
 
