@@ -94,7 +94,7 @@ var firms = [
   },
 
   { name: "Pivot Point Consulting",
-    website: "https://www.http://pivotpointconsulting.com/",
+    website: "http://pivotpointconsulting.com/",
     logo: "../assets.img/consulting/pivotpoint.jpg",
     twitter: "https://twitter.com/pivotpc",
     linkedin: "https://www.linkedin.com/company/pivot-point-consulting-llc/",
