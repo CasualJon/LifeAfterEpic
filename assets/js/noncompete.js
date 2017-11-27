@@ -12,10 +12,6 @@ createForm.setAttribute("method", "post");
 
 ENCForm.appendChild(createForm);
 
-//Left alignment of form
-// var leftAlign = document.createElement("align=\"left\"");
-// createForm.appendChild(leftAlign);
-
 //Heading of form
 var heading = document.createElement('h3');
 heading.innerHTML = "Your Epic Information: ";
