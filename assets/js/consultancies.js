@@ -190,7 +190,16 @@ var firms = [
     linkedin: "https://www.linkedin.com/company/38915/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Hayes-Management-Consulting-EI_IE667365.11,38.htm",
     confirmed: true
-  }
+  },
+
+  { name: "Evergreen Healthcare Partners",
+    website: "https://evergreenhealthcarepartners.com",
+    logo: "../assets/img/consulting/evergreen.png",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/22314988/",
+    glassdoor: null,
+    confirmed: true
+  },
 ];
 
 var confOutput = "";
