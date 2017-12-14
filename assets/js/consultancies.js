@@ -226,9 +226,9 @@ window.onload = function() {
     confOutput += "<tr><td scope=\"row\">";
 
     //Logo
-    confOutput += "<img src=\"";
+    confOutput += "<a href=\"" + randFirms[i].website + "\" target=\"_blank\"> <img src=\"";
     confOutput += randFirms[i].logo;
-    confOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/>";
+    confOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
     confOutput += "</td><td>";
 
     //Name
@@ -246,7 +246,7 @@ window.onload = function() {
 
     //Website link (using laptop icon)
     if (randFirms[i].website != null) {
-      confOutput += "<a href="+ randFirms[i].website +" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+      confOutput += "<a href=\""+ randFirms[i].website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
     }
     else {
       confOutput += " ";
@@ -284,9 +284,9 @@ function buildUnconfirmed(obj) {
   unconfOutput += "<tr><td scope=\"row\">";
 
   //Logo
-  unconfOutput += "<img src=\"";
+  unconfOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
   unconfOutput += obj.logo;
-  unconfOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/>";
+  unconfOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
   unconfOutput += "</td><td>";
 
   //Name
@@ -304,7 +304,7 @@ function buildUnconfirmed(obj) {
 
   //Website link (using laptop icon)
   if (obj.website != null) {
-    unconfOutput += "<a href="+ obj.website +" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+    unconfOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
   }
   else {
     unconfOutput += " ";
