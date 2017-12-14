@@ -129,7 +129,7 @@ var firms = [
     confirmed: false
   },
 
-  { name: "Navagant/McKinnis Consulting (MultiCare)",
+  { name: "Navigant/McKinnis Consulting (MultiCare)",
     website: "http://mckinnisconsulting.com/",
     logo: "../assets/img/consulting/mckinnis.png",
     twitter: "https://twitter.com/McKinnisCS",
