@@ -205,9 +205,10 @@ var firms = [
 var confOutput = "";
 var unconfOutput = "";
 var randFirms = [];
+var alreadyRun = false;
 
-window.onload = function() {
-
+//window.onload = function {
+function constructFirmTables() {
   //Randomize the list of consulting groups for display
   var cnt = firms.length;
   for (var i = 0; i < cnt; i++) {
@@ -273,10 +274,11 @@ window.onload = function() {
     confOutput += "</td></tr>";
   }
 
-  document.getElementById('confirmedFirms').innerHTML = confOutput;
-  document.getElementById('unconFirms').innerHTML = unconfOutput;
-  //console.log(confOutput);
-  //console.log(unconfOutput);
+  //document.getElementById('confirmedFirms').innerHTML = confOutput;
+  //document.getElementById('unconFirms').innerHTML = unconfOutput;
+  var tables = [confOutput, unconfOutput];
+  alreadyRun = true;
+  return tables;
 }
 
 
