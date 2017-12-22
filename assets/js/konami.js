@@ -55,8 +55,12 @@ function aUp() {
     state = 1;
     return;
   }
-  if (state == 1) {
+  else if (state == 1) {
     state = 2;
+    return;
+  }
+  else {
+    state = 1;
     return;
   }
 }
@@ -66,8 +70,12 @@ function aDown() {
     state = 3;
     return;
   }
-  if (state == 3) {
+  else if (state == 3) {
     state = 4;
+    return;
+  }
+  else {
+    state = 0;
     return;
   }
 }
@@ -77,8 +85,12 @@ function aLeft() {
     state = 5;
     return;
   }
-  if (state == 6) {
+  else if (state == 6) {
     state = 7;
+    return;
+  }
+  else {
+    state = 0;
     return;
   }
 }
@@ -88,8 +100,12 @@ function aRight() {
     state = 6;
     return;
   }
-  if (state == 7) {
+  else if (state == 7) {
     state = 8;
+    return;
+  }
+  else {
+    state = 0;
     return;
   }
 }
@@ -97,6 +113,10 @@ function aRight() {
 function bKey() {
   if (state == 8) {
     state = 9;
+    return;
+  }
+  else {
+    state = 0;
     return;
   }
 }
@@ -110,6 +130,10 @@ function aKey() {
       words.innerHTML = "30 lives. Well done!";
       return;
     }
+    else {
+      state = 0;
+      return;
+    }
   }
 
   if (trans = 1) {
@@ -117,7 +141,11 @@ function aKey() {
       state = 0;
       trans = 2;
       image.innerHTML = "<img src=\"./assets/img/error/poohpiglet.jpg\">";
-      words.innerHTML = "Indeed, Pooh?<br />No more... try the back button now :)";
+      words.innerHTML = "Indeed, Pooh?<br /><br />No more... try the back button now :)";
+    }
+    else {
+      state = 0;
+      return;
     }
   }
 }
