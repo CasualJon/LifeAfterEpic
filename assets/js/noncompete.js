@@ -9,7 +9,6 @@ var createForm = document.createElement('form');
 createForm.setAttribute("action", "");
 //Setting method attribute on form
 createForm.setAttribute("method", "post");
-
 ENCForm.appendChild(createForm);
 
 //-------------------------------------------------
@@ -124,7 +123,7 @@ var messageLabel = document.createElement('label');
 messageLabel.innerHTML = "Message: &nbsp;";
 createForm.appendChild(messageLabel);
 
-var messageInput = document.createElement('input');
+var messageInput = document.createElement('textarea');
 messageInput.setAttribute("type", "text");
 messageInput.setAttribute("name", "dmsg");
 createForm.appendChild(messageInput);
@@ -132,7 +131,10 @@ createForm.appendChild(messageInput);
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
-//Submit Button
+//Submit Label (for spacing) && Submit Button
+var submitLabel = document.createElement('label');
+createForm.appendChild(submitLabel);
+
 var submit = document.createElement('button');
 submit.setAttribute("type", "button");
 submit.setAttribute("class", "btn btn-primary");
