@@ -141,7 +141,7 @@ function aKey() {
       state = 0;
       trans = 2;
       image.innerHTML = "<img src=\"./assets/img/error/poohpiglet.jpg\">";
-      words.innerHTML = "Indeed, Pooh?<br /><br />No more... try the back button now :)";
+      words.innerHTML = "Indeed, Pooh? This one always made me smile on my roughest days.<br />OK. No more... try the back button now :)";
     }
     else {
       state = 0;

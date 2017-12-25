@@ -266,22 +266,33 @@ li {
 }
 
 #Epic_Non_Compete_Form label {
-  width: 25%;
+  width: 28%;
   text-align: right;
   font-size: 18px;
 }
 
 #Epic_Non_Compete_Form input[type="text"] {
-  width: 55%;
+  width: 52%;
   margin-top: 2px;
   height: 35px;
   margin-bottom: 2px;
   padding: 2px;
-  border: 2px solid #999999
+  border: 2px solid #999999;
+  vertical-align: middle;
+}
+
+#Epic_Non_Compete_Form select {
+  width: 52%;
+  margin-top: 2px;
+  height: 105px;
+  margin-bottom: 2px;
+  padding: 2px;
+  border: 2px solid #999999;
+  vertical-align: top;
 }
 
 #Epic_Non_Compete_Form textarea {
-  width: 55%;
+  width: 52%;
   margin-top: 2px;
   height: 170px;
   margin-bottom: 2px;
@@ -293,7 +304,7 @@ li {
 }
 
 #Epic_Non_Compete_Form button {
-  width: 55%;
+  width: 52%;
   height: 40px;
   font-size: 20px;
 }

@@ -4,6 +4,67 @@
 var ENCForm = document.getElementById("Epic_Non_Compete_Form");
 //Create new element form
 var createForm = document.createElement('form');
+//Create array for Epic Certifications
+var epicCertList = [
+  "Anesthesia",
+  "Beacon",
+  "Beaker",
+  "Behavioral Health",
+  "Bones",
+  "Bridges",
+  "Caboodle",
+  "Care Everywhere",
+  "Case Management",
+  "Claims - Hospital",
+  "Claims - Professional",
+  "Clarity",
+  "Cupid",
+  "Data Courier",
+  "Diagnose Behandeling Combinatie",
+  "EpicCare Ambulatory",
+  "EpicCare ASAP",
+  "EpicCare Home Health",
+  "EpicCare Hopsice",
+  "EpicCare Inpatient - ClinDoc",
+  "EpicCare Inpatient - Orders",
+  "EpicCare Link",
+  "Haiku/Canto",
+  "Healthy Planet",
+  "HIM Chart Tracking",
+  "HIM Coding",
+  "HIM Deficiency Tracking",
+  "HIM ROI",
+  "Home Health Billing",
+  "Hospice Billing",
+  "ICU",
+  "Identity",
+  "Kaleidoscope",
+  "Long Term Care",
+  "Long Term Care Billing",
+  "Lucy",
+  "MyChart",
+  "MyChart Bedside",
+  "Nurse Triage",
+  "OpTime",
+  "Phoenix",
+  "Radar",
+  "Radiant",
+  "Rehab",
+  "Reporting Workbench",
+  "Research",
+  "Resolute Hospital Billing",
+  "Resolute Professional Billing",
+  "Rover",
+  "SBO",
+  "Stork",
+  "Tapestry",
+  "Welcome",
+  "Willow Ambulatory",
+  "Willow Inpatient",
+  "Wisdom",
+  "Wound Care",
+];
+
 
 //Setting action attribute on form
 createForm.setAttribute("action", "");
@@ -32,7 +93,7 @@ createForm.appendChild(nameLabel);
 
 var nameInput = document.createElement('input');
 nameInput.setAttribute("type", "text");
-nameInput.setAttribute("name", "dname");
+nameInput.setAttribute("name", "fName");
 nameInput.setAttribute("placeholder", "FirstName LastName");
 createForm.appendChild(nameInput);
 
@@ -46,10 +107,25 @@ createForm.appendChild(emailLabel);
 
 var emailInput = document.createElement('input');
 emailInput.setAttribute("type", "text");
-emailInput.setAttribute("name", "demail");
+emailInput.setAttribute("name", "fEmail");
 emailInput.setAttribute("placeholder", "nothanks@notarealemailaddress.com");
 createForm.appendChild(emailInput);
 
+createForm.appendChild(document.createElement('br'));
+
+//-------------------------------------------------
+//First Name & Last Name
+var lInLabel = document.createElement('label');
+lInLabel.innerHTML = "LinkedIn Profile: &nbsp;";
+createForm.appendChild(lInLabel);
+
+var lInInput = document.createElement('input');
+lInInput.setAttribute("type", "text");
+lInInput.setAttribute("name", "flIn");
+lInInput.setAttribute("placeholder", "https://www.linkedin.com/...");
+createForm.appendChild(lInInput);
+
+createForm.appendChild(document.createElement('br'));
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
@@ -60,8 +136,8 @@ createForm.appendChild(startDateLabel);
 
 var startDateInput = document.createElement('input');
 startDateInput.setAttribute("type", "text");
-startDateInput.setAttribute("name", "dstart");
-startDateInput.setAttribute("placeholder", "01/02/2006");
+startDateInput.setAttribute("name", "fStartDate");
+startDateInput.setAttribute("placeholder", "MM/DD/YYYY");
 createForm.appendChild(startDateInput);
 
 createForm.appendChild(document.createElement('br'));
@@ -72,8 +148,8 @@ createForm.appendChild(endDateLabel);
 
 var endDateInput = document.createElement('input');
 endDateInput.setAttribute("type", "text");
-endDateInput.setAttribute("name", "dend");
-endDateInput.setAttribute("placeholder", "05/05/2017");
+endDateInput.setAttribute("name", "fEndDate");
+endDateInput.setAttribute("placeholder", "MM/DD/YYYY");
 createForm.appendChild(endDateInput);
 
 createForm.appendChild(document.createElement('br'));
@@ -86,20 +162,20 @@ createForm.appendChild(roleLabel);
 
 var roleInput = document.createElement('input');
 roleInput.setAttribute("type", "text");
-roleInput.setAttribute("name", "drole");
-roleInput.setAttribute("placeholder", "IS");
+roleInput.setAttribute("name", "fRole");
+roleInput.setAttribute("placeholder", "IS/TS/QA/RD/EDI/etc.");
 createForm.appendChild(roleInput);
 
 createForm.appendChild(document.createElement('br'));
 
 var primaryAppLabel = document.createElement('label');
-primaryAppLabel.innerHTML = "Primary App: &nbsp;";
+primaryAppLabel.innerHTML = "Primary App/Team: &nbsp;";
 createForm.appendChild(primaryAppLabel);
 
 var appInput = document.createElement('input');
 appInput.setAttribute("type", "text");
-appInput.setAttribute("name", "dapp");
-appInput.setAttribute("placeholder", "Grand Central");
+appInput.setAttribute("name", "fApp");
+appInput.setAttribute("placeholder", "App/Team");
 createForm.appendChild(appInput);
 
 createForm.appendChild(document.createElement('br'));
@@ -110,11 +186,21 @@ var certsLabel = document.createElement('label');
 certsLabel.innerHTML = "App Certifications: &nbsp;";
 createForm.appendChild(certsLabel);
 
-var certsInput = document.createElement('input');
-certsInput.setAttribute("type", "text");
-certsInput.setAttribute("name", "dcerts");
+var certsInput = document.createElement('select');
+certsInput.setAttribute("name", "fCerts");
+certsInput.setAttribute("multiple", "multiple");
+
+for (var i = 0; i < epicCertList.length; i++) {
+  var tmpCert = document.createElement('option');
+  tmpCert.setAttribute("value", epicCertList[i]);
+  tmpCert.innerHTML = epicCertList[i];
+
+  certsInput.appendChild(tmpCert);
+}
+
 createForm.appendChild(certsInput);
 
+createForm.appendChild(document.createElement('br'));
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
@@ -125,7 +211,7 @@ createForm.appendChild(messageLabel);
 
 var messageInput = document.createElement('textarea');
 messageInput.setAttribute("type", "text");
-messageInput.setAttribute("name", "dmsg");
+messageInput.setAttribute("name", "fMsg");
 createForm.appendChild(messageInput);
 
 createForm.appendChild(document.createElement('br'));
