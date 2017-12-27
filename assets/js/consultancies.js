@@ -205,6 +205,7 @@ var firms = [
 var confOutput = "";
 var unconfOutput = "";
 var randFirms = [];
+//referenced from within consulting.js
 var alreadyRun = false;
 
 //window.onload = function {
