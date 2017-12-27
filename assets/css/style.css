@@ -66,6 +66,44 @@ li {
   margin: 6px 0;
 }
 
+label {
+  width: 28%;
+  text-align: right;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: 52%;
+  margin-top: 2px;
+  height: 35px;
+  margin-bottom: 2px;
+  padding: 2px;
+  border: 2px solid #999999;
+  vertical-align: middle;
+}
+
+select {
+  width: 52%;
+  margin-top: 2px;
+  height: 105px;
+  margin-bottom: 2px;
+  padding: 2px;
+  border: 2px solid #999999;
+  vertical-align: top;
+}
+
+textarea {
+  width: 52%;
+  margin-top: 2px;
+  height: 170px;
+  margin-bottom: 2px;
+  padding: 2px;
+  border: 2px solid #999999;
+  resize: none;
+  overflow: auto;
+  vertical-align: top;
+}
+
 .navbar-brand {
 	font-weight: 700;
   font-size: 26px;
@@ -92,6 +130,11 @@ li {
   font-size: 22px;
 }
 
+@media screen and (min-width: 767px) {
+  h1 {
+     font-size: 40px;
+  }
+}
 
 /* ==========================================================================
    Wrap Sections
@@ -186,6 +229,16 @@ li {
 	letter-spacing: 4px;
 	font-size: 80px;
 	font-weight: bold;
+
+  @media
+
+/* Hyphen setup to wrap h1 text because of running on mobile */
+  /* word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; */
 }
 
 #resourcewrap h4 {
@@ -256,6 +309,13 @@ li {
     background-size: cover;
 }
 
+
+#Epic_Non_Compete_Form button {
+  width: 52%;
+  height: 40px;
+  font-size: 20px;
+}
+
 /* Gallery */
 .gallery {
 	margin-top: 30px;
@@ -263,48 +323,4 @@ li {
 
 .gallery img:hover {
 	opacity: 0.5;
-}
-
-#Epic_Non_Compete_Form label {
-  width: 28%;
-  text-align: right;
-  font-size: 18px;
-}
-
-#Epic_Non_Compete_Form input[type="text"] {
-  width: 52%;
-  margin-top: 2px;
-  height: 35px;
-  margin-bottom: 2px;
-  padding: 2px;
-  border: 2px solid #999999;
-  vertical-align: middle;
-}
-
-#Epic_Non_Compete_Form select {
-  width: 52%;
-  margin-top: 2px;
-  height: 105px;
-  margin-bottom: 2px;
-  padding: 2px;
-  border: 2px solid #999999;
-  vertical-align: top;
-}
-
-#Epic_Non_Compete_Form textarea {
-  width: 52%;
-  margin-top: 2px;
-  height: 170px;
-  margin-bottom: 2px;
-  padding: 2px;
-  border: 2px solid #999999;
-  resize: none;
-  overflow: auto;
-  vertical-align: top;
-}
-
-#Epic_Non_Compete_Form button {
-  width: 52%;
-  height: 40px;
-  font-size: 20px;
 }
