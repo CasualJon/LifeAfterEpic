@@ -1,5 +1,12 @@
 //js for EpicNonCompete.com page, hosted within LifeAfterEpic.com
 
+//Fetching screen width (to adjust for mobile)
+var width = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+
+  alert("Screen/Window width: " + width);
+
 //Fetching HTML elements in variables by ID
 var ENCForm = document.getElementById("Epic_Non_Compete_Form");
 //Create new element form
