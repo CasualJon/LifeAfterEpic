@@ -61,6 +61,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
 }
+h1 {
+  font-size: 80px; /* Default h1 size */
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Override h1 size for mobile */
+    }
+}
 
 li {
   margin: 6px 0;
@@ -130,12 +138,6 @@ textarea {
   font-size: 22px;
 }
 
-@media screen and (min-width: 767px) {
-  h1 {
-     font-size: 40px;
-  }
-}
-
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -166,7 +168,7 @@ textarea {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 80px;
+	/* font-size: 80px; */
 	font-weight: bold;
 }
 
@@ -227,10 +229,9 @@ textarea {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 80px;
+	/* font-size: 80px; */
 	font-weight: bold;
 
-  @media
 
 /* Hyphen setup to wrap h1 text because of running on mobile */
   /* word-wrap: break-word;
@@ -308,7 +309,6 @@ textarea {
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 #Epic_Non_Compete_Form button {
   width: 52%;
