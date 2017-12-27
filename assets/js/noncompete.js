@@ -4,8 +4,11 @@
 var width = window.innerWidth
   || document.documentElement.clientWidth
   || document.body.clientWidth;
+var smallScr = width < 768;
 
-  alert("Screen/Window width: " + width);
+//Testing code, commented out
+//alert("Screen/Window width: " + width + "\nsmallScr = " + smallScr);
+
 
 //Fetching HTML elements in variables by ID
 var ENCForm = document.getElementById("Epic_Non_Compete_Form");
@@ -98,6 +101,8 @@ var nameLabel = document.createElement('label');
 nameLabel.innerHTML = "Your Name: &nbsp;";
 createForm.appendChild(nameLabel);
 
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
 var nameInput = document.createElement('input');
 nameInput.setAttribute("type", "text");
 nameInput.setAttribute("name", "fName");
@@ -112,6 +117,8 @@ var emailLabel = document.createElement('label');
 emailLabel.innerHTML = "Your Email: &nbsp;";
 createForm.appendChild(emailLabel);
 
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
 var emailInput = document.createElement('input');
 emailInput.setAttribute("type", "text");
 emailInput.setAttribute("name", "fEmail");
@@ -125,6 +132,8 @@ createForm.appendChild(document.createElement('br'));
 var lInLabel = document.createElement('label');
 lInLabel.innerHTML = "LinkedIn Profile: &nbsp;";
 createForm.appendChild(lInLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var lInInput = document.createElement('input');
 lInInput.setAttribute("type", "text");
@@ -141,6 +150,8 @@ var startDateLabel = document.createElement('label');
 startDateLabel.innerHTML = "Epic Start Date: &nbsp;";
 createForm.appendChild(startDateLabel);
 
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
 var startDateInput = document.createElement('input');
 startDateInput.setAttribute("type", "text");
 startDateInput.setAttribute("name", "fStartDate");
@@ -152,6 +163,8 @@ createForm.appendChild(document.createElement('br'));
 var endDateLabel = document.createElement('label');
 endDateLabel.innerHTML = "Epic End Date: &nbsp;";
 createForm.appendChild(endDateLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var endDateInput = document.createElement('input');
 endDateInput.setAttribute("type", "text");
@@ -167,6 +180,8 @@ var roleLabel = document.createElement('label');
 roleLabel.innerHTML = "Epic Role: &nbsp;";
 createForm.appendChild(roleLabel);
 
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
 var roleInput = document.createElement('input');
 roleInput.setAttribute("type", "text");
 roleInput.setAttribute("name", "fRole");
@@ -178,6 +193,8 @@ createForm.appendChild(document.createElement('br'));
 var primaryAppLabel = document.createElement('label');
 primaryAppLabel.innerHTML = "Primary App/Team: &nbsp;";
 createForm.appendChild(primaryAppLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var appInput = document.createElement('input');
 appInput.setAttribute("type", "text");
@@ -192,6 +209,8 @@ createForm.appendChild(document.createElement('br'));
 var certsLabel = document.createElement('label');
 certsLabel.innerHTML = "App Certifications: &nbsp;";
 createForm.appendChild(certsLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var certsInput = document.createElement('select');
 certsInput.setAttribute("name", "fCerts");
@@ -215,6 +234,8 @@ createForm.appendChild(document.createElement('br'));
 var messageLabel = document.createElement('label');
 messageLabel.innerHTML = "Message: &nbsp;";
 createForm.appendChild(messageLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var messageInput = document.createElement('textarea');
 messageInput.setAttribute("type", "text");

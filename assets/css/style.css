@@ -64,16 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 80px; /* Default h1 size */
 }
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 40px; /* Override h1 size for medium mobile */
-    }
-}
-@media only screen and (max-width: 640px) {
-    h1 {
-        font-size: 34px; /* Override h1 size for smaller mobile */
-    }
-}
 
 li {
   margin: 6px 0;
@@ -115,6 +105,31 @@ textarea {
   resize: none;
   overflow: auto;
   vertical-align: top;
+}
+
+/* Sizing overrides for mobile form factors */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Override h1 size for medium mobile */
+    }
+    label {
+      width: 100%; /* Override width for mobile (JS sets line break) */
+      text-align: left; /* Switching align so it doesn't look dumb */
+    }
+    input[type="text"] {
+      width: 100%; /* Override width for mobile (JS sets line break) */
+    }
+    select {
+      width: 100%; /* Override width for mobile (JS sets line break) */
+    }
+    textarea {
+      width: 100%; /* Override width for mobile (JS sets line break) */
+    }
+}
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 34px; /* Override h1 size for smaller mobile */
+    }
 }
 
 .navbar-brand {
