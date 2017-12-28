@@ -14,6 +14,22 @@ var smallScr = width < 768;
 var ENCForm = document.getElementById("Epic_Non_Compete_Form");
 //Create new element form
 var createForm = document.createElement('form');
+createForm.setAttribute("id", "nonCompForm");
+
+//Create array for role
+var epicRoleList = [
+  "BID",
+  "Client Systems",
+  "EDI",
+  "IS",
+  "Other",
+  "QA",
+  "R&D",
+  "Server Systems",
+  "Tech Comm",
+  "Trainer",
+  "TS",
+];
 //Create array for Epic Certifications
 var epicCertList = [
   "Anesthesia",
@@ -137,7 +153,7 @@ if (smallScr) createForm.appendChild(document.createElement('br'));
 
 var lInInput = document.createElement('input');
 lInInput.setAttribute("type", "text");
-lInInput.setAttribute("name", "flIn");
+lInInput.setAttribute("name", "fLIn");
 lInInput.setAttribute("placeholder", "https://www.linkedin.com/...");
 createForm.appendChild(lInInput);
 
@@ -145,7 +161,7 @@ createForm.appendChild(document.createElement('br'));
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
-//Epic Start Date & Epic End Date
+//Epic Start Date
 var startDateLabel = document.createElement('label');
 startDateLabel.innerHTML = "Epic Start Date: &nbsp;";
 createForm.appendChild(startDateLabel);
@@ -160,6 +176,8 @@ createForm.appendChild(startDateInput);
 
 createForm.appendChild(document.createElement('br'));
 
+//-------------------------------------------------
+//Epic End Date
 var endDateLabel = document.createElement('label');
 endDateLabel.innerHTML = "Epic End Date: &nbsp;";
 createForm.appendChild(endDateLabel);
@@ -175,7 +193,23 @@ createForm.appendChild(endDateInput);
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
-//Epic Role & Primary Application
+//Non-Compete Length
+var ncExpLabel = document.createElement('label');
+ncExpLabel.innerHTML = "Non-Comp Length: &nbsp;";
+createForm.appendChild(ncExpLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
+var ncExpInput = document.createElement('input');
+ncExpInput.setAttribute("type", "text");
+ncExpInput.setAttribute("name", "fNCExp");
+ncExpInput.setAttribute("placeholder", "1 year/2 years");
+createForm.appendChild(ncExpInput);
+
+createForm.appendChild(document.createElement('br'));
+
+//-------------------------------------------------
+//Epic Role
 var roleLabel = document.createElement('label');
 roleLabel.innerHTML = "Epic Role: &nbsp;";
 createForm.appendChild(roleLabel);
@@ -185,11 +219,13 @@ if (smallScr) createForm.appendChild(document.createElement('br'));
 var roleInput = document.createElement('input');
 roleInput.setAttribute("type", "text");
 roleInput.setAttribute("name", "fRole");
-roleInput.setAttribute("placeholder", "IS/TS/QA/RD/EDI/etc.");
+roleInput.setAttribute("placeholder", "IS/TS/QA/RD/BID/EDI/Trainer/etc.");
 createForm.appendChild(roleInput);
 
 createForm.appendChild(document.createElement('br'));
 
+//-------------------------------------------------
+//Primary Application
 var primaryAppLabel = document.createElement('label');
 primaryAppLabel.innerHTML = "Primary App/Team: &nbsp;";
 createForm.appendChild(primaryAppLabel);
@@ -205,7 +241,7 @@ createForm.appendChild(appInput);
 createForm.appendChild(document.createElement('br'));
 
 //-------------------------------------------------
-//Epic Role & Primary Application
+//Certifications
 var certsLabel = document.createElement('label');
 certsLabel.innerHTML = "App Certifications: &nbsp;";
 createForm.appendChild(certsLabel);
@@ -252,6 +288,28 @@ createForm.appendChild(submitLabel);
 var submit = document.createElement('button');
 submit.setAttribute("type", "button");
 submit.setAttribute("class", "btn btn-primary");
-submit.setAttribute("onclick", "");
+submit.setAttribute("onclick", "validateAndSubmit()");
 submit.innerHTML = "Submit";
 createForm.appendChild(submit);
+
+//-------------------------------------------------
+//Form Validation & Submission Function
+function validateAndSubmit() {
+  var rName = document.forms["nonCompForm"]["fName"].value;
+  var rEmail = document.forms["nonCompForm"]["fEmail"].value;
+  var rLIn = document.forms["nonCompForm"]["fLIn"].value;
+  var rStartDate = document.forms["nonCompForm"]["fStartDate"].value;
+  var rEndDate = document.forms["nonCompForm"]["fEndDate"].value;
+  var rNCExp = document.forms["nonCompForm"]["fNCExp"].value;
+  var rRole = document.forms["nonCompForm"]["fRole"].value;
+  var rApp = document.forms["nonCompForm"]["fApp"].value;
+  //Not validating Certifications (Category Selection)
+  var rCerts = document.forms["nonCompForm"]["fCerts"].value;
+  //Not validating Message (Openended Free Text)
+  var rMsg = document.forms["nonCompForm"]["fMsg"].value;
+
+  //Testing Code: dump captured fields to console
+  console.log(rName + " " + rEmail + " " + rLIn + " " + rStartDate + " " + rEndDate + " " +
+    rNCExp + " " + rRole + " " + rApp + " | " + rCerts + " | " + rMsg);
+
+}
