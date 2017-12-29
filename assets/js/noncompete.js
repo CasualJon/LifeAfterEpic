@@ -403,12 +403,12 @@ function validateAndSubmit() {
   //Non-Compete Validation --------
   //RegEx Testing:
   if (rNCExp != null && rNCExp != "") {
-    var ncRE = new RegExp("^[1-2][\040]?(y|yr|year|years)$");
+    var ncRE = new RegExp("^[1-2][\040]?(y|yr|year|years)?$");
     //console.log("Non-Compete Length = " + rNCExp);
     if (!ncRE.test(rNCExp)) {
       numIssues++;
       goodToGo = false;
-      validationMsg += "- Invalid Non-Compete length";
+      validationMsg += "- Non-Compete length invalid\n";
     }
   }
 
