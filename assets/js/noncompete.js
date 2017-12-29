@@ -15,6 +15,7 @@ var ENCForm = document.getElementById("Epic_Non_Compete_Form");
 //Create new form element, name element
 var createForm = document.createElement('form');
 createForm.setAttribute("id", "nonCompForm");
+createForm.setAttribute("name", "nonCompForm");
 
 //Create array for role -- CURRRENTLY UNUSED
 var epicRoleList = [
@@ -97,9 +98,9 @@ var epicCertList = [
 
 
 //Setting action attribute on form
-createForm.setAttribute("action", "");
+createForm.setAttribute("action", "https://getform.org/f/8efa573d-cf21-4c40-b2e3-0ffd0b1a702e");
 //Setting method attribute on form
-createForm.setAttribute("method", "post");
+createForm.setAttribute("method", "POST");
 ENCForm.appendChild(createForm);
 
 //-------------------------------------------------
@@ -437,15 +438,30 @@ function validateAndSubmit() {
       alert(numIssues + " issues found:\n" + validationMsg);
   }
   else {
+    //Safe assumptions of finding space b/c of RegEx testing above
+    var space = rName.indexOf(" ");
+    var firstName = rName.substring(0, space);
+
+    if (rName.length > space) {
+      var secondSpace = rName.substring(space + 1).indexOf(" ");
+      if (secondSpace > 0) {
+        space += secondSpace + 1;
+        firstName = rName.substring(0, space);
+      }
+    }
+
     var info = "<div class=\"text-center\"><hr><h3>You're all set!</h3><br />";
-//TODO - Respond with first name below?
-    info += "<h4>Everthing looks good, and form is on it's way.<br /><br />";
-    info += "&#128077;</h4></div>";
+    info += "<h4>Everthing looks good, " + firstName + "! The form is on it's way.<br /><br />";
+    info += "<big><big>&#128077;</big></big></h4>";
+    info += "<p><a href=\"./index.html\">Back to LifeAfterEpic.com</a><div>";
     ENCForm.innerHTML = info;
 
+    //Submit the form
+    document.forms["nonCompForm"].submit();
   }
 }
 
+//Function builds adn returns array composed of user App Certifications
 function getSelectedAppCerts() {
   var  selected = new Array();
   var selectionBox = document.forms["nonCompForm"]["fCerts"];
