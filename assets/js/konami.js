@@ -37,8 +37,16 @@ function readKonami() {
         bKey();
         break;
 
+      case "B":
+        bKey();
+        break;
+
       case "a":
         aKey();
+        break;
+
+      case "A":
+        bKey();
         break;
 
       default:
