@@ -6,10 +6,6 @@ var width = window.innerWidth
   || document.body.clientWidth;
 var smallScr = width < 768;
 
-//Testing code, commented out
-//alert("Screen/Window width: " + width + "\nsmallScr = " + smallScr);
-
-
 //Fetching HTML elements in variables by ID
 var ENCForm = document.getElementById("Epic_Non_Compete_Form");
 //Create new form element, name element
@@ -96,12 +92,15 @@ var epicCertList = [
   "Wound Care",
 ];
 
-
 //Setting action attribute on form
 createForm.setAttribute("action", "https://getform.org/f/8efa573d-cf21-4c40-b2e3-0ffd0b1a702e");
+
 //Setting method attribute on form
 createForm.setAttribute("method", "POST");
+//Make the launching to the GetForm.org Thank You page in a new window
+createForm.setAttribute("target", "_blank");
 ENCForm.appendChild(createForm);
+
 
 //-------------------------------------------------
 //Heading of form
@@ -109,12 +108,14 @@ var heading = document.createElement('h3');
 heading.innerHTML = "Your Information: ";
 createForm.appendChild(heading);
 
+
 //-------------------------------------------------
 //Insert horizontal row/line following heading
 var line = document.createElement('hr');
 createForm.appendChild(line);
 var linebreak = document.createElement('br');
 createForm.appendChild(linebreak);
+
 
 //-------------------------------------------------
 //First Name & Last Name
@@ -133,6 +134,7 @@ createForm.appendChild(nameInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //First Name & Last Name
 var emailLabel = document.createElement('label');
@@ -149,6 +151,7 @@ createForm.appendChild(emailInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //First Name & Last Name
 var lInLabel = document.createElement('label');
@@ -163,8 +166,33 @@ lInInput.setAttribute("name", "fLIn");
 lInInput.setAttribute("placeholder", "https://www.linkedin.com/...");
 createForm.appendChild(lInInput);
 
+
+//-------------------------------------------------
+//Inform Non-Consultants?
+var informLocalText = document.createElement('div');
+if (!smallScr) informLocalText.setAttribute("style", "margin-left: 28%;");
+else informLocalText.setAttribute("style", "margin-left: 0%");
+informLocalText.innerHTML = "Inform non-consulting businesses & recruiters?";
+createForm.appendChild(informLocalText);
+
+var informLocalLabel = document.createElement('label');
+informLocalLabel.setAttribute("class", "switch");
+if (!smallScr) informLocalLabel.setAttribute("style", "margin-left: 28%");
+else informLocalLabel.setAttribute("style", "margin-left: 0%");
+
+var informLocalInput = document.createElement('input');
+informLocalInput.setAttribute("type", "checkbox");
+informLocalInput.setAttribute("name", "fInformLocal");
+informLocalLabel.appendChild(informLocalInput);
+
+var informLocalSpan = document.createElement('span');
+informLocalSpan.setAttribute("class", "slider round");
+informLocalLabel.appendChild(informLocalSpan);
+
+createForm.appendChild(informLocalLabel);
+
 createForm.appendChild(document.createElement('br'));
-createForm.appendChild(document.createElement('br'));
+
 
 //-------------------------------------------------
 //Epic Start Date
@@ -182,6 +210,7 @@ createForm.appendChild(startDateInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //Epic End Date
 var endDateLabel = document.createElement('label');
@@ -197,6 +226,7 @@ endDateInput.setAttribute("placeholder", "MM/DD/YYYY");
 createForm.appendChild(endDateInput);
 
 createForm.appendChild(document.createElement('br'));
+
 
 //-------------------------------------------------
 //Non-Compete Length
@@ -214,6 +244,7 @@ createForm.appendChild(ncExpInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //Epic Role
 var roleLabel = document.createElement('label');
@@ -230,6 +261,7 @@ createForm.appendChild(roleInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //Primary Application
 var primaryAppLabel = document.createElement('label');
@@ -245,6 +277,7 @@ appInput.setAttribute("placeholder", "App/Team");
 createForm.appendChild(appInput);
 
 createForm.appendChild(document.createElement('br'));
+
 
 //-------------------------------------------------
 //Certifications
@@ -271,6 +304,7 @@ createForm.appendChild(certsInput);
 createForm.appendChild(document.createElement('br'));
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //Additional Message
 var messageLabel = document.createElement('label');
@@ -286,6 +320,7 @@ createForm.appendChild(messageInput);
 
 createForm.appendChild(document.createElement('br'));
 
+
 //-------------------------------------------------
 //Submit Label (for spacing) && Submit Button
 var submitLabel = document.createElement('label');
@@ -298,6 +333,7 @@ submit.setAttribute("onclick", "validateAndSubmit()");
 submit.innerHTML = "Submit";
 createForm.appendChild(submit);
 
+
 //-------------------------------------------------
 //Form Validation & Submission Function
 function validateAndSubmit() {
@@ -307,6 +343,7 @@ function validateAndSubmit() {
   var rName = document.forms["nonCompForm"]["fName"].value;
   var rEmail = document.forms["nonCompForm"]["fEmail"].value;
   var rLIn = document.forms["nonCompForm"]["fLIn"].value;
+  var rInformLocal = document.forms["nonCompForm"]["fInformLocal"].checked;
   var rStartDate = document.forms["nonCompForm"]["fStartDate"].value;
   var rEndDate = document.forms["nonCompForm"]["fEndDate"].value;
   var rNCExp = document.forms["nonCompForm"]["fNCExp"].value;
@@ -314,6 +351,7 @@ function validateAndSubmit() {
   var rApp = document.forms["nonCompForm"]["fApp"].value;
   var rCerts = getSelectedAppCerts();
   var rMsg = document.forms["nonCompForm"]["fMsg"].value;
+
 
   //-------------------------------
   //Name Validation ---------------
@@ -336,6 +374,7 @@ function validateAndSubmit() {
     }
   }
 
+
   //-------------------------------
   //Email Validation --------------
   // Email && LinkenIn cannot both be blank
@@ -355,6 +394,7 @@ function validateAndSubmit() {
     }
   }
 
+
   //-------------------------------
   //LinkedIn Validation -----------
   //RegEx Testing:
@@ -368,6 +408,7 @@ function validateAndSubmit() {
     }
   }
 
+
   //-------------------------------
   //Start Date Validation ---------
   //RegEx Testing:
@@ -380,6 +421,7 @@ function validateAndSubmit() {
       validationMsg += "- Start Date invalid or not in MM/DD/YYYY format\n";
     }
   }
+
 
   //-------------------------------
   //End Date Validation -----------
@@ -400,6 +442,7 @@ function validateAndSubmit() {
     }
   }
 
+
   //-------------------------------
   //Non-Compete Validation --------
   //RegEx Testing:
@@ -413,6 +456,7 @@ function validateAndSubmit() {
     }
   }
 
+
   //-------------------------------
   //Role Validation ---------------
   if (rRole == null || rRole == "") {
@@ -421,11 +465,14 @@ function validateAndSubmit() {
     validationMsg += "- Role is required\n";
   }
 
+
   //-------------------------------
   //App Validation ----------------
   //None at present...
   //console.log("Primary Application = " + rApp);
 
+  //Not validating Inform Local Businesses & Recruiters
+  //console.log("Inform Local = " + rInformLocal);
   //Not validating Certifications (Category Selection)
   //console.log("Certifications = " + rCerts);
   //Not validating Message (Openended Free Text)
@@ -450,16 +497,18 @@ function validateAndSubmit() {
       }
     }
 
+    //Submit the form
+    document.nonCompForm.action="https://getform.org/f/8efa573d-cf21-4c40-b2e3-0ffd0b1a702e";
+    document.nonCompForm.submit();
+
     var info = "<div class=\"text-center\"><hr><h3>You're all set!</h3><br />";
     info += "<h4>Everthing looks good, " + firstName + "! The form is on it's way.<br /><br />";
     info += "<big><big>&#128077;</big></big></h4>";
     info += "<p><a href=\"./index.html\">Back to LifeAfterEpic.com</a><div>";
     ENCForm.innerHTML = info;
-
-    //Submit the form
-    document.forms["nonCompForm"].submit();
   }
 }
+
 
 //Function builds adn returns array composed of user App Certifications
 function getSelectedAppCerts() {

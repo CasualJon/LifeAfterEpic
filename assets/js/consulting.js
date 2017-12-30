@@ -8,7 +8,7 @@ function thingsToKnow() {
 
   data += "<button type=\"button\" class=\"btn btn-success\" onclick=\"thingsToKnow()\">Things to Know</button>&nbsp;";
   data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"cFirms()\">Consulting Firms</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"nComp()\">Non-compete</button><br /><br />";
+  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-compete</button><br /><br />";
 
 
   data += "<h4>Things I wish I knew before consulting (given by consultants)</h4>";
@@ -42,7 +42,7 @@ function cFirms() {
 
   data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"thingsToKnow()\">Things to Know</button>&nbsp;";
   data += "<button type=\"button\" class=\"btn btn-success\" onclick=\"cFirms()\">Consulting Firms</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"nComp()\">Non-compete</button><br /><br />";
+  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-compete</button><br /><br />";
 
   data += "<p><i>If you see incorrect information or needed changes, please get in touch!</i></p><br />";
   data += "<h4>Consulting firms actively providing Epic consulting services</h4>";
@@ -68,6 +68,8 @@ function cFirms() {
   subPage.innerHTML = data;
 }
 
+//This is now dead code since the Non-Compete Button links to noncompete.html
+/*
 function nComp() {
   data = "";
 
@@ -79,3 +81,4 @@ function nComp() {
 
   subPage.innerHTML = data;
 }
+*/
