@@ -215,15 +215,14 @@ input:checked + .slider:before {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/Sunset_Small.jpg);
-  background-repeat: no-repeat;
-	/* margin-top: -70px; */
+	background: url(../img/Sunset_Small.jpg) no-repeat center top;
+	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center center;
 	min-height: 650px;
-	/* width: 100%; */
+	width: 100%;
 
     -webkit-background-size: 100%;
 /*  -moz-background-size: 100%; */
