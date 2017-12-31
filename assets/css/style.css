@@ -1,5 +1,3 @@
-
-
 /* ==========================================================================
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
@@ -351,12 +349,12 @@ input:checked + .slider:before {
 }
 
 #noncompetewrap {
-	background: url(../img/lighthouse.jpg) no-repeat center top;
+	background: url(../img/lighthouse.jpg) no-repeat left top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: left center;
 	min-height: 650px;
 	width: 100%;
 
