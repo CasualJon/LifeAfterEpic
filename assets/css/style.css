@@ -213,24 +213,24 @@ input:checked + .slider:before {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/Sunset_Small.jpg) no-repeat center top;
+	background: url(../img/Sunset_Small.jpg) no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center top;
 	min-height: 650px;
 	width: 100%;
 
-    -webkit-background-size: 100%;
+    -webkit-background-size: 120%;
 /*  -moz-background-size: 100%; */
-    -o-background-size: 100%;
-    background-size: 100%;
+    -o-background-size: 120%;
+    background-size: 120%;
 
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
 /*  -moz-background-size: cover; */
-    -o-background-size: cover;
-    background-size: cover;
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 
 #headerwrap h1 {
@@ -337,24 +337,24 @@ input:checked + .slider:before {
 	min-height: 650px;
 	width: 100%;
 
-    /* -webkit-background-size: 100%; */
+    -webkit-background-size: 130%;
 /*  -moz-background-size: 100%; */
-    /* -o-background-size: 100%; */
-    /* background-size: 100%; */
+    -o-background-size: 130%;
+    background-size: 130%;
 
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
 /*  -moz-background-size: cover; */
-    -o-background-size: cover;
-    background-size: cover;
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 
 #noncompetewrap {
-	background: url(../img/lighthouse.jpg) no-repeat left top;
+	background: url(../img/lighthouse.jpg) no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
-	background-position: left center;
+	background-position: left top;
 	min-height: 650px;
 	width: 100%;
 
@@ -363,10 +363,10 @@ input:checked + .slider:before {
     -o-background-size: 100%;
     background-size: 100%;
 
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
 /*  -moz-background-size: cover; */
-    -o-background-size: cover;
-    background-size: cover;
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 
 #Epic_Non_Compete_Form button {
