@@ -307,19 +307,19 @@ input:checked + .slider:before {
 }
 
 #profilewrap {
-	background: url(../img/Focus.jpg) no-repeat center top;
+	background: url(../img/Focus.jpg) no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center center;
-	min-height: 550px;
+	min-height: 650px;
 	width: 100%;
 
-    -webkit-background-size: 100%;
+    /* -webkit-background-size: 120%; */
 /*  -moz-background-size: 100%; */
-    -o-background-size: 100%;
-    background-size: 100%;
+    /* -o-background-size: 120%; */
+    /* background-size: 120%; */
 
     -webkit-background-size: cover;
 /*  -moz-background-size: cover; */
@@ -328,19 +328,19 @@ input:checked + .slider:before {
 }
 
 #thinkingwrap {
-	background: url(../img/Snoopy_Woodstock_Small.jpg) no-repeat center top;
+	background: url(../img/Snoopy_Woodstock_Small.jpg) no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center center;
-	min-height: 550px;
+	min-height: 650px;
 	width: 100%;
 
-    -webkit-background-size: 100%;
+    /* -webkit-background-size: 100%; */
 /*  -moz-background-size: 100%; */
-    -o-background-size: 100%;
-    background-size: 100%;
+    /* -o-background-size: 100%; */
+    /* background-size: 100%; */
 
     -webkit-background-size: cover;
 /*  -moz-background-size: cover; */
