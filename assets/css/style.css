@@ -316,15 +316,15 @@ input:checked + .slider:before {
 	min-height: 650px;
 	width: 100%;
 
-    /* -webkit-background-size: 120%; */
+    -webkit-background-size: 120%;
 /*  -moz-background-size: 100%; */
-    /* -o-background-size: 120%; */
-    /* background-size: 120%; */
+    -o-background-size: 120%;
+    background-size: 120%;
 
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
 /*  -moz-background-size: cover; */
-    -o-background-size: cover;
-    background-size: cover;
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 
 #thinkingwrap {
