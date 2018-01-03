@@ -200,6 +200,33 @@ var firms = [
     glassdoor: null,
     confirmed: true
   },
+
+  { name: "The Wilshire Group Associates",
+    website: "https://http://thewilshiregroup.net",
+    logo: "../assets/img/consulting/wilshiregroup.jpg",
+    twitter: "https://twitter.com/TheWilshireGrp",
+    linkedin: "https://www.linkedin.com/company/the-wilshire-group-associates/",
+    glassdoor: null,
+    confirmed: true
+  },
+
+  { name: "ARCH Group, LLC",
+    website: "http://www.myarchgroup.com/index.php/home",
+    logo: "../assets/img/consulting/arch.png",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/1438633/",
+    glassdoor: null,
+    confirmed: false
+  },
+
+  { name: "T3K Health",
+    website: "http://www.t3khealth.com/",
+    logo: "../assets/img/consulting/t3k.png",
+    twitter: "https://twitter.com/T3KHealth",
+    linkedin: "https://www.linkedin.com/company/3060022/",
+    glassdoor: null,
+    confirmed: false
+  },
 ];
 
 var confOutput = "";
