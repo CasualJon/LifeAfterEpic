@@ -67,18 +67,3 @@ function cFirms() {
 
   subPage.innerHTML = data;
 }
-
-//This is now dead code since the Non-Compete Button links to noncompete.html
-/*
-function nComp() {
-  data = "";
-
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"thingsToKnow()\">Things to Know</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"cFirms()\">Consulting Firms</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-success\" onclick=\"nComp()\">Non-compete</button><br /><br />";
-
-  data += "<p>Yep, working on it...</p>";
-
-  subPage.innerHTML = data;
-}
-*/
