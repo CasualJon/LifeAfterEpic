@@ -375,6 +375,10 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 
+#enterprisesContent td {
+  text-align: left;
+}
+
 /* Gallery */
 .gallery {
 	margin-top: 30px;

@@ -6,6 +6,7 @@ const orgType = {
   CONSULTING: "Consulting",
   SOFTWARE: "Software",
   NONPROFIT: "Non-Profit",
+  SERVICES: "Services",
   OTHER: "Other",
 };
 
@@ -15,8 +16,7 @@ var ventures = [
     logo: "../assets/img/consulting/bluetreenetwork.jpg",
     twitter: "https://twitter.com/BluetreeNetwork",
     linkedin: "https://www.linkedin.com/company/2663341/",
-    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Bluetree-Network-EI_IE1010664.11,27.htm",
-    confirmed: true,
+    about: null,
     category: orgType.CONSULTING,
     acquired: false,
     parent: null,
@@ -27,8 +27,7 @@ var ventures = [
     logo: "../assets/img/consulting/huron.jpg",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/5751/",
-    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Huron-Consulting-Group-EI_IE35223.11,33.htm",
-    confirmed: true,
+    about: null,
     category: orgType.CONSULTING,
     acquired: true,
     parent: "Huron Consulting Group",
@@ -39,8 +38,7 @@ var ventures = [
     logo: "../assets/img/consulting/sagacious.png",
     twitter: "https://twitter.com/Accenture",
     linkedin: "https://www.linkedin.com/company/456960/",
-    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Sagacious-Consultants-EI_IE423622.11,32.htm",
-    confirmed: true,
+    about: null,
     category: orgType.CONSULTING,
     acquired: true,
     parent: "Accenture",
@@ -51,8 +49,7 @@ var ventures = [
     logo: "../assets/img/consulting/avaap.jpg",
     twitter: "https://twitter.com/avaap_usa",
     linkedin: "https://www.linkedin.com/company/avaap/",
-    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Falcon-Consulting-Group-EI_IE413291.11,34.htm",
-    confirmed: true,
+    about: null,
     category: orgType.CONSULTING,
     acquired: true,
     parent: "Aavap",
@@ -63,8 +60,7 @@ var ventures = [
     logo: "../assets/img/consulting/umbrella.png",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/10831208/",
-    glassdoor: null,
-    confirmed: false,
+    about: null,
     category: orgType.CONSULTING,
     acquired: false,
     parent: null,
@@ -75,8 +71,7 @@ var ventures = [
     logo: "../assets/img/consulting/arch.png",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/1438633/",
-    glassdoor: null,
-    confirmed: false,
+    about: null,
     category: orgType.CONSULTING,
     acquired: false,
     parent: null,
@@ -87,20 +82,119 @@ var ventures = [
     logo: "../assets/img/consulting/t3k.png",
     twitter: "https://twitter.com/T3KHealth",
     linkedin: "https://www.linkedin.com/company/3060022/",
-    glassdoor: null,
-    confirmed: false,
+    about: null,
     category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Redox",
+    website: "https://www.redoxengine.com/",
+    logo: "../assets/img/ventures/redox.png",
+    twitter: "https://twitter.com/Redox",
+    linkedin: "https://www.linkedin.com/company/5079845/",
+    about: "Redox is the modern API for EHR integration, the bridge from health systems to the cloud and back.",
+    category: orgType.SOFTWARE,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Tri 4 Schools",
+    website: "http://www.tri4schools.org/",
+    logo: "../assets/img/ventures/tri4schools.jpg",
+    twitter: "https://twitter.com/tri4schools",
+    linkedin: null,
+    about: "Tri 4 Schools is a Non-Profit organizing kids' athletic events & programs, and donating to the health & nutrition programs within their schools.",
+    category: orgType.NONPROFIT,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "100state",
+    website: "https://100state.com/",
+    logo: "../assets/img/ventures/100state.jpg",
+    twitter: "https://twitter.com/100State",
+    linkedin: "https://www.linkedin.com/company/3185919/",
+    about: "Wisconsin's largest coworking community, 100state creates a home for problem solvers, creatives, and entrepreneurs.",
+    category: orgType.NONPROFIT,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Zing Collaborative",
+    website: "http://www.zingcollaborative.com/",
+    logo: "../assets/img/ventures/zing.jpg",
+    twitter: "https://twitter.com/zingcollab",
+    linkedin: "https://www.linkedin.com/company/3175708/",
+    about: "Leadership coaching, consulting, and training for passionate, talented, & inspired forward thinkers.",
+    category: orgType.SERVICES,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Isthmus Bubble Soccer",
+    website: "http://www.isthmusbubblesoccer.com/",
+    logo: "../assets/img/ventures/isthmusbubblesoccer.jpeg",
+    twitter: "https://twitter.com/Isthmus_bsoccer",
+    linkedin: null,
+    about: "Madison's bubble soccer provider! We service the entire Madison area with parties, private events, tournaments and leagues.",
+    category: orgType.OTHER,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Rule the Room",
+    website: "http://ruletheroompublicspeaking.com/",
+    logo: "../assets/img/ventures/ruletheroom.png",
+    twitter: "https://twitter.com/ruletheroom",
+    linkedin: "https://www.linkedin.com/company/2678130/",
+    about: "Training & development, presentation & communication skills for companies, financial advisors, and trainers.",
+    category: orgType.SERVICES,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "altSTATES Travel",
+    website: "https://www.altstatestravel.com/",
+    logo: "../assets/img/ventures/altstates.jpg",
+    twitter: "https://twitter.com/altstates",
+    linkedin: "https://www.linkedin.com/company/27168027/",
+    about: "Unique, native-led adventures for locals and visitors in the Midwestern United States.",
+    category: orgType.OTHER,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Black Earth Children's Museum",
+    website: "https://www.blackearthchildrensmuseum.org/",
+    logo: "../assets/img/ventures/bechildrens.png",
+    twitter: null,
+    linkedin: null,
+    about: "Our mission is to inspire youth and families to discover more about themselves, their communities and their world through interactive learning.",
+    category: orgType.NONPROFIT,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Whiz.ai",
+    website: "https://whiz.ai/",
+    logo: "../assets/img/ventures/whizai.jpg",
+    twitter: "https://twitter.com/whizdotai?lang=en",
+    linkedin: "https://www.linkedin.com/company/11164530/",
+    about: "Whiz is an AI powered personal data analyst that tracks business trends and keeps users up to date via a conversational interface.",
+    category: orgType.SOFTWARE,
     acquired: false,
     parent: null,
   },
 ];
 
-var subPage = document.getElementById('content');
+var subPage = document.getElementById('enterprisesContent');
 var data = "";
 
 var consultingOutput = "";
 var softwareOutput = "";
 var nonprofitOutput = "";
+var servicesOutput = "";
 var otherOutput = "";
 var randVentures = [];
 var alreadyRun = false;
@@ -109,6 +203,10 @@ constructTables();
 buildData();
 subPage.innerHTML = data;
 
+
+//-----------------------------------------------------
+//  Primary entry point, itself builds consultingOutput
+//-----------------------------------------------------
 function constructTables() {
   //Randomize the list of consulting groups for display
   var cnt = ventures.length;
@@ -128,6 +226,10 @@ function constructTables() {
       buildNonprofit(randVentures[i]);
       continue;
     }
+    if (randVentures[i].category == "Services") {
+      buildServices(randVentures[i]);
+      continue;
+    }
     if (randVentures[i].category == "Other") {
       buildOther(randVentures[i]);
       continue;
@@ -143,13 +245,13 @@ function constructTables() {
     consultingOutput += "</td><td>&nbsp;&nbsp;</td><td>";
 
     //Name
-    consultingOutput += "";
+    consultingOutput += "<big>";
     consultingOutput += randVentures[i].name;
-    consultingOutput += "</td><td>";
+    consultingOutput += "</big></td><td>";
 
     //If acquired, list parent/owner
     if (randVentures[i].acquired == true) {
-      consultingOutput += "<small>acquired by " + randVentures[i].parent + "</small>";
+      consultingOutput += "<small><small>acquired by " + randVentures[i].parent + "</small></small>";
     }
     consultingOutput += "</td><td>";
 
@@ -183,26 +285,28 @@ function constructTables() {
   }
 }
 
-
+//-----------------------------------------------------
+//  softwareOutput
+//-----------------------------------------------------
 function buildSoftware(obj) {
   softwareOutput += "<tr><td scope=\"row\">";
 
   //Logo
   softwareOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
   softwareOutput += obj.logo;
-  softwareOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
-  softwareOutput += "</td><td>";
+  softwareOutput += "\" alt=\"Org Logo\" class=\"center-block\" height=\"64\" width=\"64\"/></a>";
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  softwareOutput += "</td><td>&nbsp;&nbsp;</td><td>";
 
   //Name
+  softwareOutput += "<big>";
   softwareOutput += obj.name;
-  softwareOutput += "</td><td>";
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  softwareOutput += "</big></td><td>&nbsp;&nbsp;</td><td>";
 
-  //Glassdoor link
-  if (obj.glassdoor != null) {
-    softwareOutput += "<a href=\"" + obj.glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
-  }
-  else {
-    softwareOutput += "no glassdoor listing"
+  //About
+  if (obj.about != null) {
+    softwareOutput += "<small><small>" + obj.about + "</small></small>";
   }
   softwareOutput += "</td><td>";
 
@@ -235,17 +339,178 @@ function buildSoftware(obj) {
   softwareOutput += "</td></tr>";
 }
 
-function buildNonprofit(obj) {}
+//-----------------------------------------------------
+//  nonprofitOutput
+//-----------------------------------------------------
+function buildNonprofit(obj) {
+  nonprofitOutput += "<tr><td scope=\"row\">";
 
-function buildOther(obj) {}
+  //Logo
+  nonprofitOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
+  nonprofitOutput += obj.logo;
+  nonprofitOutput += "\" alt=\"Org Logo\" class=\"center-block\" height=\"64\" width=\"64\"/></a>";
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  nonprofitOutput += "</td><td>&nbsp;&nbsp;</td><td>";
 
+  //Name
+  nonprofitOutput += "<big>";
+  nonprofitOutput += obj.name;
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  nonprofitOutput += "</big></td><td>&nbsp;&nbsp;</td><td>";
+
+  //About
+  if (obj.about != null) {
+    nonprofitOutput += "<small><small>" + obj.about + "</small></small>";
+  }
+  nonprofitOutput += "</td><td>";
+
+  //Website link (using laptop icon)
+  if (obj.website != null) {
+    nonprofitOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+  }
+  else {
+    nonprofitOutput += " ";
+  }
+  nonprofitOutput += "</td><td>";
+
+  //LinkedIn link (using LinkedIn icon)
+  if (obj.linkedin != null) {
+    nonprofitOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+  }
+  else {
+    nonprofitOutput += " ";
+  }
+  nonprofitOutput += "</td><td>";
+
+  //Twitter link (using Twitter icon)
+  if (obj.twitter != null) {
+    nonprofitOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+  }
+  else {
+    nonprofitOutput += " ";
+  }
+
+  nonprofitOutput += "</td></tr>";
+}
+
+//-----------------------------------------------------
+//  servicesOutput
+//-----------------------------------------------------
+function buildServices(obj) {
+  servicesOutput += "<tr><td scope=\"row\">";
+
+  //Logo
+  servicesOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
+  servicesOutput += obj.logo;
+  servicesOutput += "\" alt=\"Org Logo\" class=\"center-block\" height=\"64\" width=\"64\"/></a>";
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  servicesOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+
+  //Name
+  servicesOutput += "<big>";
+  servicesOutput += obj.name;
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  servicesOutput += "</big></td><td>&nbsp;&nbsp;</td><td>";
+
+  //About
+  if (obj.about != null) {
+    servicesOutput += "<small><small>" + obj.about + "</small></small>";
+  }
+  servicesOutput += "</td><td>";
+
+  //Website link (using laptop icon)
+  if (obj.website != null) {
+    servicesOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+  }
+  else {
+    servicesOutput += " ";
+  }
+  servicesOutput += "</td><td>";
+
+  //LinkedIn link (using LinkedIn icon)
+  if (obj.linkedin != null) {
+    servicesOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+  }
+  else {
+    servicesOutput += " ";
+  }
+  servicesOutput += "</td><td>";
+
+  //Twitter link (using Twitter icon)
+  if (obj.twitter != null) {
+    servicesOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+  }
+  else {
+    servicesOutput += " ";
+  }
+
+  servicesOutput += "</td></tr>";
+}
+
+//-----------------------------------------------------
+//  otherOutput
+//-----------------------------------------------------
+function buildOther(obj) {
+  otherOutput += "<tr><td scope=\"row\">";
+
+  //Logo
+  otherOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
+  otherOutput += obj.logo;
+  otherOutput += "\" alt=\"Org Logo\" class=\"center-block\" height=\"64\" width=\"64\"/></a>";
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  otherOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+
+  //Name
+  otherOutput += "<big>";
+  otherOutput += obj.name;
+  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+  otherOutput += "</big></td><td>&nbsp;&nbsp;</td><td>";
+
+  //About
+  if (obj.about != null) {
+    otherOutput += "<small><small>" + obj.about + "</small></small>";
+  }
+  otherOutput += "</td><td>";
+
+  //Website link (using laptop icon)
+  if (obj.website != null) {
+    otherOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+  }
+  else {
+    otherOutput += " ";
+  }
+  otherOutput += "</td><td>";
+
+  //LinkedIn link (using LinkedIn icon)
+  if (obj.linkedin != null) {
+    otherOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+  }
+  else {
+    otherOutput += " ";
+  }
+  otherOutput += "</td><td>";
+
+  //Twitter link (using Twitter icon)
+  if (obj.twitter != null) {
+    otherOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+  }
+  else {
+    otherOutput += " ";
+  }
+
+  otherOutput += "</td></tr>";
+}
+
+//-----------------------------------------------------
+//  sets data with the full string to populate html
+//-----------------------------------------------------
 function buildData() {
   if (alreadyRun) {
     return;
   }
 
   data += "<br />";
-  data += "<h4>Consultancies</h4>";
+  data += "<h4>Consulting</h4>";
   data += "<div class=\"table-responsive\">";
   data += "<table class=\"table\">";
   data += "<tbody id=\"consultingVentures\">";
@@ -266,6 +531,14 @@ function buildData() {
   data += "<table class=\"table\">";
   data += "<tbody id=\"nonprofitVentures\">";
   data += nonprofitOutput;
+  data += "</tbody></table></div>";
+
+  data += "<br />";
+  data += "<h4>Professional Services</h4>";
+  data += "<div class=\"table-responsive\">";
+  data += "<table class=\"table\">";
+  data += "<tbody id=\"servicesVentures\">";
+  data += servicesOutput;
   data += "</tbody></table></div>";
 
   data += "<br />";

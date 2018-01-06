@@ -235,7 +235,9 @@ var randFirms = [];
 //referenced from within consulting.js
 var alreadyRun = false;
 
-//window.onload = function {
+//-----------------------------------------------------
+//  Primary entry point, itself builds confOutput
+//-----------------------------------------------------
 function constructFirmTables() {
   //Randomize the list of consulting groups for display
   var cnt = firms.length;
@@ -309,7 +311,9 @@ function constructFirmTables() {
   return tables;
 }
 
-
+//-----------------------------------------------------
+//  unconfOutput
+//-----------------------------------------------------
 function buildUnconfirmed(obj) {
   unconfOutput += "<tr><td scope=\"row\">";
 
