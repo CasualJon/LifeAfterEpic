@@ -2,6 +2,13 @@
 //For now, storing the data needed to build table within this js file
 //... yay workarounds.
 
+const orgType = {
+  CONSULTING: "Consulting",
+  SOFTWARE: "Software",
+  NONPROFIT: "Non-Profit",
+  OTHER: "Other",
+};
+
 var ventures = [
   { name: "BlueTree Network",
     website: "https://www.bluetreenetwork.com/",
@@ -10,41 +17,45 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/2663341/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Bluetree-Network-EI_IE1010664.11,27.htm",
     confirmed: true,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
   },
 
-  { name: "Huron Consulting Group (Vonlay)",
+  { name: "Vonlay",
     website: "https://www.huronconsultinggroup.com/",
     logo: "../assets/img/consulting/huron.jpg",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/5751/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Huron-Consulting-Group-EI_IE35223.11,33.htm",
     confirmed: true,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: true,
+    parent: "Huron Consulting Group",
   },
 
-  { name: "Accenture/Sagacious Consultants",
+  { name: "Sagacious Consultants",
     website: "http://www.sagaciousconsultants.com/index.html",
     logo: "../assets/img/consulting/sagacious.png",
     twitter: "https://twitter.com/Accenture",
     linkedin: "https://www.linkedin.com/company/456960/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Sagacious-Consultants-EI_IE423622.11,32.htm",
     confirmed: true,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: true,
+    parent: "Accenture",
   },
 
-  { name: "avaap (fka Falcon Consulting Group)",
+  { name: "Falcon Consulting Group",
     website: "https://www.avaap.com/",
     logo: "../assets/img/consulting/avaap.jpg",
     twitter: "https://twitter.com/avaap_usa",
     linkedin: "https://www.linkedin.com/company/avaap/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Falcon-Consulting-Group-EI_IE413291.11,34.htm",
     confirmed: true,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: true,
+    parent: "Aavap",
   },
 
   { name: "Umbrella Health IT",
@@ -54,8 +65,9 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/10831208/",
     glassdoor: null,
     confirmed: false,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
   },
 
   { name: "ARCH Group, LLC",
@@ -65,8 +77,9 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/1438633/",
     glassdoor: null,
     confirmed: false,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
   },
 
   { name: "T3K Health",
@@ -76,140 +89,195 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/3060022/",
     glassdoor: null,
     confirmed: false,
-    category: null,
-    acquired: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
   },
 ];
 
-var confOutput = "";
-var unconfOutput = "";
-var randVentrues = [];
+var subPage = document.getElementById('content');
+var data = "";
+
+var consultingOutput = "";
+var softwareOutput = "";
+var nonprofitOutput = "";
+var otherOutput = "";
+var randVentures = [];
 var alreadyRun = false;
 
-//window.onload = function {
-function constructFirmTables() {
+constructTables();
+buildData();
+subPage.innerHTML = data;
+
+function constructTables() {
   //Randomize the list of consulting groups for display
   var cnt = ventures.length;
   for (var i = 0; i < cnt; i++) {
     var tmp = ventures.splice(getRandom(ventures.length), 1);
-    randVentrues.push(tmp[0]);
+    randVentures.push(tmp[0]);
   }
 
 
-  for (var i = 0; i < randVentrues.length; i++) {
-
-    if (randVentrues[i].confirmed == false) {
-      buildUnconfirmed(randVentrues[i]);
+  for (var i = 0; i < randVentures.length; i++) {
+    //Offload building the output of individual sections
+    if (randVentures[i].category == "Software") {
+      buildSoftware(randVentures[i]);
+      continue;
+    }
+    if (randVentures[i].category == "Non-Profit") {
+      buildNonprofit(randVentures[i]);
+      continue;
+    }
+    if (randVentures[i].category == "Other") {
+      buildOther(randVentures[i]);
       continue;
     }
 
-    confOutput += "<tr><td scope=\"row\">";
+    consultingOutput += "<tr><td scope=\"row\">";
 
     //Logo
-    confOutput += "<a href=\"" + randVentrues[i].website + "\" target=\"_blank\"> <img src=\"";
-    confOutput += randVentrues[i].logo;
-    confOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
-    confOutput += "</td><td>";
+    consultingOutput += "<a href=\"" + randVentures[i].website + "\" target=\"_blank\"> <img src=\"";
+    consultingOutput += randVentures[i].logo;
+    consultingOutput += "\" alt=\"Org Logo\" class=\"center-block\" height=\"64\" width=\"64\"/></a>";
+    //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
+    consultingOutput += "</td><td>&nbsp;&nbsp;</td><td>";
 
     //Name
-    confOutput += randVentrues[i].name;
-    confOutput += "</td><td>";
+    consultingOutput += "";
+    consultingOutput += randVentures[i].name;
+    consultingOutput += "</td><td>";
 
-    //Glassdoor link
-    if (randVentrues[i].glassdoor != null) {
-      confOutput += "<a href=\"" + randVentrues[i].glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
+    //If acquired, list parent/owner
+    if (randVentures[i].acquired == true) {
+      consultingOutput += "<small>acquired by " + randVentures[i].parent + "</small>";
     }
-    else {
-      confOutput += "no glassdoor listing"
-    }
-    confOutput += "</td><td>";
+    consultingOutput += "</td><td>";
 
     //Website link (using laptop icon)
-    if (randVentrues[i].website != null) {
-      confOutput += "<a href=\""+ randVentrues[i].website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+    if (randVentures[i].website != null) {
+      consultingOutput += "<a href=\""+ randVentures[i].website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
     }
     else {
-      confOutput += " ";
+      consultingOutput += " ";
     }
-    confOutput += "</td><td>";
+    consultingOutput += "</td><td>";
 
     //LinkedIn link (using LinkedIn icon)
-    if (randVentrues[i].linkedin != null) {
-      confOutput += "<a href="+ randVentrues[i].linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    if (randVentures[i].linkedin != null) {
+      consultingOutput += "<a href="+ randVentures[i].linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
     }
     else {
-      confOutput += " ";
+      consultingOutput += " ";
     }
-    confOutput += "</td><td>";
+    consultingOutput += "</td><td>";
 
     //Twitter link (using Twitter icon)
-    if (randVentrues[i].twitter != null) {
-      confOutput += "<a href="+ randVentrues[i].twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    if (randVentures[i].twitter != null) {
+      consultingOutput += "<a href="+ randVentures[i].twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
     }
     else {
-      confOutput += " ";
+      consultingOutput += " ";
     }
 
-    confOutput += "</td></tr>";
+    consultingOutput += "</td></tr>";
   }
-
-  var tables = [confOutput, unconfOutput];
-  alreadyRun = true;
-  return tables;
 }
 
 
-function buildUnconfirmed(obj) {
-  unconfOutput += "<tr><td scope=\"row\">";
+function buildSoftware(obj) {
+  softwareOutput += "<tr><td scope=\"row\">";
 
   //Logo
-  unconfOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
-  unconfOutput += obj.logo;
-  unconfOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
-  unconfOutput += "</td><td>";
+  softwareOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
+  softwareOutput += obj.logo;
+  softwareOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
+  softwareOutput += "</td><td>";
 
   //Name
-  unconfOutput += obj.name;
-  unconfOutput += "</td><td>";
+  softwareOutput += obj.name;
+  softwareOutput += "</td><td>";
 
   //Glassdoor link
   if (obj.glassdoor != null) {
-    unconfOutput += "<a href=\"" + obj.glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
+    softwareOutput += "<a href=\"" + obj.glassdoor + "\" target=\"_blank\">glassdoor reviews</a>";
   }
   else {
-    unconfOutput += "no glassdoor listing"
+    softwareOutput += "no glassdoor listing"
   }
-  unconfOutput += "</td><td>";
+  softwareOutput += "</td><td>";
 
   //Website link (using laptop icon)
   if (obj.website != null) {
-    unconfOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+    softwareOutput += "<a href=\""+ obj.website +"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
   }
   else {
-    unconfOutput += " ";
+    softwareOutput += " ";
   }
-  unconfOutput += "</td><td>";
+  softwareOutput += "</td><td>";
 
   //LinkedIn link (using LinkedIn icon)
   if (obj.linkedin != null) {
-    unconfOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    softwareOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
   }
   else {
-    unconfOutput += " ";
+    softwareOutput += " ";
   }
-  unconfOutput += "</td><td>";
+  softwareOutput += "</td><td>";
 
   //Twitter link (using Twitter icon)
   if (obj.twitter != null) {
-    unconfOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    softwareOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
   }
   else {
-    unconfOutput += " ";
+    softwareOutput += " ";
   }
 
-  unconfOutput += "</td></tr>";
+  softwareOutput += "</td></tr>";
 }
 
+function buildNonprofit(obj) {}
+
+function buildOther(obj) {}
+
+function buildData() {
+  if (alreadyRun) {
+    return;
+  }
+
+  data += "<br />";
+  data += "<h4>Consultancies</h4>";
+  data += "<div class=\"table-responsive\">";
+  data += "<table class=\"table\">";
+  data += "<tbody id=\"consultingVentures\">";
+  data += consultingOutput;
+  data += "</tbody></table></div>";
+
+  data += "<br />";
+  data += "<h4>Software</h4>";
+  data += "<div class=\"table-responsive\">";
+  data += "<table class=\"table\">";
+  data += "<tbody id=\"softwareVentures\">";
+  data += softwareOutput;
+  data += "</tbody></table></div>";
+
+  data += "<br />";
+  data += "<h4>Non-Profit</h4>";
+  data += "<div class=\"table-responsive\">";
+  data += "<table class=\"table\">";
+  data += "<tbody id=\"nonprofitVentures\">";
+  data += nonprofitOutput;
+  data += "</tbody></table></div>";
+
+  data += "<br />";
+  data += "<h4>Other</h4>";
+  data += "<div class=\"table-responsive\">";
+  data += "<table class=\"table\">";
+  data += "<tbody id=\"otherVentures\">";
+  data += otherOutput;
+  data += "</tbody></table></div>";
+
+  alreadyRun = true;
+}
 
 ///////////////////////////////////////
 // Random Number Generation

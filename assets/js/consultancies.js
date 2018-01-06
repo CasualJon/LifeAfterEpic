@@ -57,7 +57,7 @@ var firms = [
     confirmed: true
   },
 
-  { name: "avaap (fka Falcon Consulting Group)",
+  { name: "Avaap (fka Falcon Consulting Group)",
     website: "https://www.avaap.com/",
     logo: "../assets/img/consulting/avaap.jpg",
     twitter: "https://twitter.com/avaap_usa",
@@ -257,7 +257,7 @@ function constructFirmTables() {
     //Logo
     confOutput += "<a href=\"" + randFirms[i].website + "\" target=\"_blank\"> <img src=\"";
     confOutput += randFirms[i].logo;
-    confOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
+    confOutput += "\" alt=\"Firm Logo\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
     confOutput += "</td><td>";
 
     //Name
@@ -316,7 +316,7 @@ function buildUnconfirmed(obj) {
   //Logo
   unconfOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
   unconfOutput += obj.logo;
-  unconfOutput += "\" alt=\"dammit\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
+  unconfOutput += "\" alt=\"Firm Logo\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
   unconfOutput += "</td><td>";
 
   //Name

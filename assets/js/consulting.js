@@ -52,11 +52,12 @@ function cFirms() {
   data += "<table class=\"table\">";
   data += "<tbody id=\"confirmedFirms\">";
   data += tables[0];
-  data += "</tbody></table>";
+  data += "</tbody></table></div>";
 
   data += "<br /><h4>Uncertain placement: firms rumored/claiming to offer Epic services, but unable to verify current Epic customers</h4>";
   data += "<p>Presented in randomized order.</p><br />";
 
+  data += "<div class=\"table-responsive\">";
   data += "<table class=\"table\">";
   data += "<tbody id=\"unconFirms\">";
   data +=  tables[1];
