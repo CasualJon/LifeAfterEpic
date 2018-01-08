@@ -197,6 +197,28 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+
+  { name: "CenterX",
+    website: "http://www.centerx.com/",
+    logo: "../assets/img/ventures/centerx.png",
+    twitter: "https://twitter.com/CenterX1",
+    linkedin: "https://www.linkedin.com/company/centerx/",
+    about: "CenterX is an ePrescribing company providing services for real-time medication adherence tracking by connecting doctors, health plans and pharmacists.",
+    category: orgType.SOFTWARE,
+    acquired: false,
+    parent: null,
+  },
+
+  { name: "Health eFilings",
+    website: "https://healthefilings.com/",
+    logo: "../assets/img/ventures/healthefilings.png",
+    twitter: "https://twitter.com/EasyPQRS",
+    linkedin: "https://www.linkedin.com/company/10110206/",
+    about: "We automate PQRS & VBM filing process by extracting, aggregating, formatting, & submitting quality measures directly to Medicare. No clinic staff time needed!",
+    category: orgType.SOFTWARE,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
