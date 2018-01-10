@@ -16,6 +16,7 @@ var ventures = [
     logo: "../assets/img/consulting/bluetreenetwork.jpg",
     twitter: "https://twitter.com/BluetreeNetwork",
     linkedin: "https://www.linkedin.com/company/2663341/",
+    facebook: "https://www.facebook.com/BluetreeNetwork/",
     about: null,
     category: orgType.CONSULTING,
     acquired: false,
@@ -27,6 +28,7 @@ var ventures = [
     logo: "../assets/img/ventures/vonlay.png",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/5751/",
+    facebook: "https://www.facebook.com/HuronConsulting",
     about: null,
     category: orgType.CONSULTING,
     acquired: true,
@@ -38,6 +40,7 @@ var ventures = [
     logo: "../assets/img/consulting/sagacious.png",
     twitter: "https://twitter.com/Accenture",
     linkedin: "https://www.linkedin.com/company/456960/",
+    facebook: "https://www.facebook.com/sagaciousconsultants/",
     about: null,
     category: orgType.CONSULTING,
     acquired: true,
@@ -49,6 +52,7 @@ var ventures = [
     logo: "../assets/img/ventures/falcon.jpg",
     twitter: "https://twitter.com/avaap_usa",
     linkedin: "https://www.linkedin.com/company/avaap/",
+    facebook: "https://www.facebook.com/AvaapUSA/",
     about: null,
     category: orgType.CONSULTING,
     acquired: true,
@@ -60,6 +64,7 @@ var ventures = [
     logo: "../assets/img/ventures/cipe.jpg",
     twitter: "https://twitter.com/cumberlandcg",
     linkedin: "https://www.linkedin.com/company/cumberland-consulting-group/",
+    facebook: "https://www.facebook.com/CumberlandCG",
     about: null,
     category: orgType.CONSULTING,
     acquired: true,
@@ -71,6 +76,7 @@ var ventures = [
     logo: "../assets/img/consulting/umbrella.png",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/10831208/",
+    facebook: null,
     about: null,
     category: orgType.CONSULTING,
     acquired: false,
@@ -82,6 +88,7 @@ var ventures = [
     logo: "../assets/img/consulting/arch.png",
     twitter: null,
     linkedin: "https://www.linkedin.com/company/1438633/",
+    facebook: null,
     about: null,
     category: orgType.CONSULTING,
     acquired: false,
@@ -93,6 +100,7 @@ var ventures = [
     logo: "../assets/img/consulting/t3k.png",
     twitter: "https://twitter.com/T3KHealth",
     linkedin: "https://www.linkedin.com/company/3060022/",
+    facebook: "https://www.facebook.com/T3kHealth",
     about: null,
     category: orgType.CONSULTING,
     acquired: false,
@@ -104,6 +112,7 @@ var ventures = [
     logo: "../assets/img/ventures/redox.png",
     twitter: "https://twitter.com/Redox",
     linkedin: "https://www.linkedin.com/company/5079845/",
+    facebook: "https://www.facebook.com/redoxengine/",
     about: "Redox is the modern API for EHR integration, the bridge from health systems to the cloud and back.",
     category: orgType.SOFTWARE,
     acquired: false,
@@ -115,6 +124,7 @@ var ventures = [
     logo: "../assets/img/ventures/tri4schools.jpg",
     twitter: "https://twitter.com/tri4schools",
     linkedin: null,
+    facebook: "https://www.facebook.com/tri4schools",
     about: "Tri 4 Schools is a Non-Profit organizing kids' athletic events & programs, and donating to the health & nutrition programs within their schools.",
     category: orgType.NONPROFIT,
     acquired: false,
@@ -126,6 +136,7 @@ var ventures = [
     logo: "../assets/img/ventures/100state.jpg",
     twitter: "https://twitter.com/100State",
     linkedin: "https://www.linkedin.com/company/3185919/",
+    facebook: "https://www.facebook.com/100State/",
     about: "Wisconsin's largest coworking community, 100state creates a home for problem solvers, creatives, and entrepreneurs.",
     category: orgType.NONPROFIT,
     acquired: false,
@@ -137,6 +148,7 @@ var ventures = [
     logo: "../assets/img/ventures/zing.jpg",
     twitter: "https://twitter.com/zingcollab",
     linkedin: "https://www.linkedin.com/company/3175708/",
+    facebook: "https://www.facebook.com/ZingCollaborative/",
     about: "Leadership coaching, consulting, and training for passionate, talented, & inspired forward thinkers.",
     category: orgType.SERVICES,
     acquired: false,
@@ -148,6 +160,7 @@ var ventures = [
     logo: "../assets/img/ventures/isthmusbubblesoccer.jpeg",
     twitter: "https://twitter.com/Isthmus_bsoccer",
     linkedin: null,
+    facebook: "https://www.facebook.com/isthmusbubblesoccer",
     about: "Madison's bubble soccer provider! We service the entire Madison area with parties, private events, tournaments and leagues.",
     category: orgType.OTHER,
     acquired: false,
@@ -159,6 +172,7 @@ var ventures = [
     logo: "../assets/img/ventures/ruletheroom.png",
     twitter: "https://twitter.com/ruletheroom",
     linkedin: "https://www.linkedin.com/company/2678130/",
+    facebook: "https://www.facebook.com/RTRPublicSpeaking/",
     about: "Training & development, presentation & communication skills for companies, financial advisors, and trainers.",
     category: orgType.SERVICES,
     acquired: false,
@@ -170,6 +184,7 @@ var ventures = [
     logo: "../assets/img/ventures/altstates.jpg",
     twitter: "https://twitter.com/altstates",
     linkedin: "https://www.linkedin.com/company/27168027/",
+    facebook: "https://www.facebook.com/altstates",
     about: "Unique, native-led adventures for locals and visitors in the Midwestern United States.",
     category: orgType.OTHER,
     acquired: false,
@@ -181,6 +196,7 @@ var ventures = [
     logo: "../assets/img/ventures/bechildrens.png",
     twitter: null,
     linkedin: null,
+    facebook: "https://www.facebook.com/blackearthchildrensmuseum/",
     about: "Our mission is to inspire youth and families to discover more about themselves, their communities and their world through interactive learning.",
     category: orgType.NONPROFIT,
     acquired: false,
@@ -192,6 +208,7 @@ var ventures = [
     logo: "../assets/img/ventures/whizai.jpg",
     twitter: "https://twitter.com/whizdotai?lang=en",
     linkedin: "https://www.linkedin.com/company/11164530/",
+    facebook: "https://www.facebook.com/whizAI/",
     about: "Whiz is an AI powered personal data analyst that tracks business trends and keeps users up to date via a conversational interface.",
     category: orgType.SOFTWARE,
     acquired: false,
@@ -203,6 +220,7 @@ var ventures = [
     logo: "../assets/img/ventures/moxe.jpg",
     twitter: "https://twitter.com/moxehealth",
     linkedin: "https://www.linkedin.com/company/2440255/",
+    facebook: "https://www.facebook.com/MoxeHealth/",
     about: "We help health systems and health plans share medical records, key patient insights and claims data in real-time, to seamlessly deliver the right information at the right time.",
     category: orgType.SOFTWARE,
     acquired: false,
@@ -214,6 +232,7 @@ var ventures = [
     logo: "../assets/img/ventures/centerx.png",
     twitter: "https://twitter.com/CenterX1",
     linkedin: "https://www.linkedin.com/company/centerx/",
+    facebook: "https://www.facebook.com/CenterX",
     about: "CenterX is an ePrescribing company providing services for real-time medication adherence tracking by connecting doctors, health plans and pharmacists.",
     category: orgType.SOFTWARE,
     acquired: false,
@@ -225,6 +244,7 @@ var ventures = [
     logo: "../assets/img/ventures/healthefilings.png",
     twitter: "https://twitter.com/EasyPQRS",
     linkedin: "https://www.linkedin.com/company/10110206/",
+    facebook: null,
     about: "We automate PQRS & VBM filing process by extracting, aggregating, formatting, & submitting quality measures directly to Medicare. No clinic staff time needed!",
     category: orgType.SOFTWARE,
     acquired: false,
@@ -236,6 +256,7 @@ var ventures = [
     logo: "../assets/img/ventures/revel.png",
     twitter: null,
     linkedin: null,
+    facebook: "https://www.facebook.com/RevelMadison",
     about: "A modern DIY studio and event space just off the Capitol Square! Complete projects while socializing and enjoying a drink or snack from our bar, we'll clean up afterwards!",
     category: orgType.OTHER,
     acquired: false,
@@ -319,9 +340,18 @@ function constructTables() {
     }
     consultingOutput += "</td><td>";
 
+    //Facebook link (using Facebook icon)
+    if (randVentures[i].facebook != null) {
+      consultingOutput += "<a href=\"" + randVentures[i].facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a>";
+    }
+    else {
+      consultingOutput += " ";
+    }
+    consultingOutput += "</td><td>";
+
     //LinkedIn link (using LinkedIn icon)
     if (randVentures[i].linkedin != null) {
-      consultingOutput += "<a href="+ randVentures[i].linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+      consultingOutput += "<a href=\"" + randVentures[i].linkedin + "\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
     }
     else {
       consultingOutput += " ";
@@ -330,7 +360,7 @@ function constructTables() {
 
     //Twitter link (using Twitter icon)
     if (randVentures[i].twitter != null) {
-      consultingOutput += "<a href="+ randVentures[i].twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+      consultingOutput += "<a href=\"" + randVentures[i].twitter + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
     }
     else {
       consultingOutput += " ";
@@ -374,9 +404,18 @@ function buildSoftware(obj) {
   }
   softwareOutput += "</td><td>";
 
+  //Facebook link (using Facebook icon)
+  if (obj.facebook != null) {
+    softwareOutput += "<a href=\"" + obj.facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a>";
+  }
+  else {
+    softwareOutput += " ";
+  }
+  softwareOutput += "</td><td>";
+
   //LinkedIn link (using LinkedIn icon)
   if (obj.linkedin != null) {
-    softwareOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    softwareOutput += "<a href=\"" + obj.linkedin + "\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
   }
   else {
     softwareOutput += " ";
@@ -385,7 +424,7 @@ function buildSoftware(obj) {
 
   //Twitter link (using Twitter icon)
   if (obj.twitter != null) {
-    softwareOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    softwareOutput += "<a href=\"" + obj.twitter + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
   }
   else {
     softwareOutput += " ";
@@ -428,9 +467,18 @@ function buildNonprofit(obj) {
   }
   nonprofitOutput += "</td><td>";
 
+  //Facebook link (using Facebook icon)
+  if (obj.facebook != null) {
+    nonprofitOutput += "<a href=\"" + obj.facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a>";
+  }
+  else {
+    nonprofitOutput += " ";
+  }
+  nonprofitOutput += "</td><td>";
+
   //LinkedIn link (using LinkedIn icon)
   if (obj.linkedin != null) {
-    nonprofitOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    nonprofitOutput += "<a href=\"" + obj.linkedin + "\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
   }
   else {
     nonprofitOutput += " ";
@@ -439,7 +487,7 @@ function buildNonprofit(obj) {
 
   //Twitter link (using Twitter icon)
   if (obj.twitter != null) {
-    nonprofitOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    nonprofitOutput += "<a href=\"" + obj.twitter + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
   }
   else {
     nonprofitOutput += " ";
@@ -482,9 +530,18 @@ function buildServices(obj) {
   }
   servicesOutput += "</td><td>";
 
+  //Facebook link (using Facebook icon)
+  if (obj.facebook != null) {
+    servicesOutput += "<a href=\"" + obj.facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a>";
+  }
+  else {
+    servicesOutput += " ";
+  }
+  servicesOutput += "</td><td>";
+
   //LinkedIn link (using LinkedIn icon)
   if (obj.linkedin != null) {
-    servicesOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    servicesOutput += "<a href=\"" + obj.linkedin + "\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
   }
   else {
     servicesOutput += " ";
@@ -493,7 +550,7 @@ function buildServices(obj) {
 
   //Twitter link (using Twitter icon)
   if (obj.twitter != null) {
-    servicesOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    servicesOutput += "<a href=\"" + obj.twitter + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
   }
   else {
     servicesOutput += " ";
@@ -503,7 +560,7 @@ function buildServices(obj) {
 }
 
 //-----------------------------------------------------
-//  otherOutput
+//  otherOutput - - renamed "Events, Travel, and Leisure" Jan 20187
 //-----------------------------------------------------
 function buildOther(obj) {
   otherOutput += "<tr><td scope=\"row\">";
@@ -536,9 +593,18 @@ function buildOther(obj) {
   }
   otherOutput += "</td><td>";
 
+  //Facebook link (using Facebook icon)
+  if (obj.facebook != null) {
+    otherOutput += "<a href=\"" + obj.facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a>";
+  }
+  else {
+    otherOutput += " ";
+  }
+  otherOutput += "</td><td>";
+
   //LinkedIn link (using LinkedIn icon)
   if (obj.linkedin != null) {
-    otherOutput += "<a href="+ obj.linkedin +" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+    otherOutput += "<a href=\""+ obj.linkedin + "\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
   }
   else {
     otherOutput += " ";
@@ -547,7 +613,7 @@ function buildOther(obj) {
 
   //Twitter link (using Twitter icon)
   if (obj.twitter != null) {
-    otherOutput += "<a href="+ obj.twitter +" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+    otherOutput += "<a href=\"" + obj.twitter + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
   }
   else {
     otherOutput += " ";
