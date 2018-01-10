@@ -230,6 +230,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+
+  { name: "Revel",
+    website: "https://revelmadison.com/",
+    logo: "../assets/img/ventures/revel.png",
+    twitter: null,
+    linkedin: null,
+    about: "A modern DIY studio and event space just off the Capitol Square! Complete projects while socializing and enjoying a drink or snack from our bar, we'll clean up afterwards!",
+    category: orgType.OTHER,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
@@ -586,7 +597,7 @@ function buildData() {
   data += "</tbody></table></div>";
 
   data += "<br />";
-  data += "<h4>Other</h4>";
+  data += "<h4>Events, Travel, and Leisure</h4>";
   data += "<div class=\"table-responsive\">";
   data += "<table class=\"table\">";
   data += "<tbody id=\"otherVentures\">";
