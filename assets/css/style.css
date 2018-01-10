@@ -125,9 +125,16 @@ textarea {
     }
     #headerwrap {
     	background: url(../img/Sunset_mob.jpg) no-repeat;
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
     }
     #thinkingwrap {
     	background: url(../img/Snoopy_Woodstock_mob.jpg) no-repeat;
+      background: url(../img/Sunset_mob.jpg) no-repeat;
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
     }
 }
 @media only screen and (max-width: 640px) {
