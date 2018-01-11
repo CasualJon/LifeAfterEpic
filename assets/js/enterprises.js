@@ -262,6 +262,18 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+
+  { name: "Patronus Health",
+    website: "https://patronushealth.co/",
+    logo: "../assets/img/ventures/patronus.jpg",
+    twitter: "https://twitter.com/PatronusHealth/",
+    linkedin: "https://www.linkedin.com/company/24968649/",
+    facebook: "https://www.facebook.com/PatronusHealth/",
+    about: "Patronus Health is a healthcare advocacy startup focused on eliminating the burden of medical debt in the US by negotiating fair market costs for medical services.",
+    category: orgType.SERVICES,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
