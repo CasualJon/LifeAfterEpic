@@ -4,7 +4,7 @@ var state = 0;
 var trans = 0;
 
 var image = document.getElementById('errorImage');
-image.innerHTML = "<img src=\"./assets/img/error/MossFire.gif\">";
+image.innerHTML = "<img src=\"http://lifeafterepic.com/assets/img/error/MossFire.gif\">";
 var words = document.getElementById('errorWords');
 words.innerHTML = "Dear Sir stroke Madam, I am writing to inform you of a fire which has broken out at the premises of... No, that's too formal.<br />Dear Sir stroke Madam. Fire, exclamation mark. Fire, exclamation mark. Help me, exclamation mark. 123 Carrendon Road. Looking forward to hearing from you. All the best, Maurice Moss.";
 
@@ -134,7 +134,7 @@ function aKey() {
     if (state == 9) {
       state = 0;
       trans = 1;
-      image.innerHTML = "<img src=\"./assets/img/error/ContraA.gif\"><br /><img src=\"./assets/img/error/ContraB.gif\">";
+      image.innerHTML = "<img src=\"http://lifeafterepic.com/assets/img/error/ContraA.gif\"><br /><img src=\"./assets/img/error/ContraB.gif\">";
       words.innerHTML = "30 lives. Well done!";
       return;
     }
@@ -148,7 +148,7 @@ function aKey() {
     if (state == 9) {
       state = 0;
       trans = 2;
-      image.innerHTML = "<img src=\"./assets/img/error/poohpiglet.jpg\">";
+      image.innerHTML = "<img src=\"http://lifeafterepic.com/assets/img/error/poohpiglet.jpg\">";
       words.innerHTML = "Indeed, Pooh? This one always made me smile on my roughest days.<br />OK. No more... try the back button now :)";
     }
     else {
