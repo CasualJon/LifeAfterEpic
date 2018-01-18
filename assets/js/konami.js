@@ -134,7 +134,7 @@ function aKey() {
     if (state == 9) {
       state = 0;
       trans = 1;
-      image.innerHTML = "<img src=\"http://lifeafterepic.com/assets/img/error/ContraA.gif\"><br /><img src=\"./assets/img/error/ContraB.gif\">";
+      image.innerHTML = "<img src=\"http://lifeafterepic.com/assets/img/error/ContraA.gif\"><br /><img src=\"http://lifeafterepic.com/assets/img/error/ContraB.gif\">";
       words.innerHTML = "30 lives. Well done!";
       return;
     }
