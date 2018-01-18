@@ -140,7 +140,7 @@ createForm.appendChild(document.createElement('br'));
 
 
 //-------------------------------------------------
-//First Name & Last Name
+//Email
 var emailLabel = document.createElement('label');
 emailLabel.innerHTML = "<font color=\"blue\">*</font>Your Email: &nbsp;";
 createForm.appendChild(emailLabel);
@@ -157,7 +157,7 @@ createForm.appendChild(document.createElement('br'));
 
 
 //-------------------------------------------------
-//First Name & Last Name
+//LinkedIn
 var lInLabel = document.createElement('label');
 lInLabel.innerHTML = "<font color=\"blue\">*</font>LinkedIn Profile: &nbsp;";
 createForm.appendChild(lInLabel);
