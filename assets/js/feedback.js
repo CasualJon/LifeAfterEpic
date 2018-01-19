@@ -254,7 +254,7 @@ function validateAndSubmit() {
     var info = "<div class=\"text-center\"><hr><h3>You're all set!</h3><br />";
     info += "<h4>Everthing looks good, thank  you! The form is on it's way.<br /><br />";
     info += "<big><big>&#128515;</big></big></h4>";
-    info += "<p><a href=\"./index.html\">Back to LifeAfterEpic.com</a><div>";
+    info += "<p><a href=\"../index.html\">Back to LifeAfterEpic.com</a><div>";
     FBForm.innerHTML = info;
   }
 }
