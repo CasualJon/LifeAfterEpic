@@ -375,6 +375,17 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 
+#Feedback_Form select {
+    height: 35px;
+    vertical-align: middle;
+}
+
+#Feedback_Form button {
+  width: 52%;
+  height: 40px;
+  font-size: 20px;
+}
+
 #enterprisesContent td {
   text-align: left;
 }

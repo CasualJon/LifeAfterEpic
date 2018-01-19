@@ -8,9 +8,11 @@ var smallScr = width < 768;
 
 //Array for Good/Bad/Ok
 var goodBadOK = [
-  "&#128077;", //Thumbs up, Smiley face
-  "&#128076;", //OK hand, Bland face
-  "&#128077;", //Thumbs down, Sad face
+  "",  //Empty value
+  "&#128078; &nbsp; - &nbsp Poor", //Thumbs down
+  "&#128075; &nbsp; - &nbsp Mediocre", //Wavering hand
+  "&#128076; &nbsp; - &nbsp Good", //OK hand
+  "&#128077; &nbsp; - &nbsp; Impressive", //Thumbs up
 ];
 
 //Fetching HTML elements in variables by ID
@@ -48,7 +50,6 @@ createForm.appendChild(linebreak);
 
 //-------------------------------------------------
 //First Name & Last Name
-//Red asterix for required item
 var nameLabel = document.createElement('label');
 nameLabel.innerHTML = "Your Name: &nbsp;";
 createForm.appendChild(nameLabel);
@@ -61,6 +62,29 @@ nameInput.setAttribute("name", "fName");
 nameInput.setAttribute("placeholder", "Jon");
 createForm.appendChild(nameInput);
 
+createForm.appendChild(document.createElement('br'));
+
+
+//-------------------------------------------------
+//PMGI
+var pmgiLabel = document.createElement('label');
+pmgiLabel.innerHTML = "PMGI: &nbsp;";
+createForm.appendChild(pmgiLabel);
+
+if (smallScr) createForm.appendChild(document.createElement('br'));
+
+var pmgiInput = document.createElement('select');
+pmgiInput.setAttribute("name", "fPMGI");
+
+for (var i = 0; i < goodBadOK.length; i++) {
+  var tempVal = document.createElement('option');
+  tempVal.setAttribute("value", goodBadOK[i]);
+  tempVal.innerHTML = goodBadOK[i];
+
+  pmgiInput.appendChild(tempVal);
+}
+
+createForm.appendChild(pmgiInput);
 createForm.appendChild(document.createElement('br'));
 
 
@@ -100,9 +124,9 @@ followUpInput.setAttribute("type", "checkbox");
 followUpInput.setAttribute("name", "fFollowUp");
 followUpContactLabel.appendChild(followUpInput);
 
-var informLocalSpan = document.createElement('span');
-informLocalSpan.setAttribute("class", "slider round");
-followUpContactLabel.appendChild(informLocalSpan);
+var followUpSpan = document.createElement('span');
+followUpSpan.setAttribute("class", "slider round");
+followUpContactLabel.appendChild(followUpSpan);
 
 createForm.appendChild(followUpContactLabel);
 
@@ -113,6 +137,7 @@ createForm.appendChild(document.createElement('br'));
 //Email
 var emailLabel = document.createElement('label');
 emailLabel.innerHTML = "<font color=\"red\">*</font>Your Email: &nbsp;";
+//emailLabel.style.display = "None";
 createForm.appendChild(emailLabel);
 
 if (smallScr) createForm.appendChild(document.createElement('br'));
@@ -121,6 +146,7 @@ var emailInput = document.createElement('input');
 emailInput.setAttribute("type", "text");
 emailInput.setAttribute("name", "fEmail");
 emailInput.setAttribute("placeholder", "nothanks@notarealemailaddress.com");
+//emailInput.style.display = "None";
 createForm.appendChild(emailInput);
 
 createForm.appendChild(document.createElement('br'));
@@ -146,6 +172,7 @@ function validateAndSubmit() {
   var numIssues = 0;
   var validationMsg = "";
   var rName = document.forms["feedbackForm"]["fName"].value;
+  var rPMGI = document.forms["feedbackForm"]["fPMGI"].selectedIndex;
   var rMsg = document.forms["feedbackForm"]["fMsg"].value;
   var rFollowUp = document.forms["feedbackForm"]["fFollowUp"].checked;
   var rEmail = document.forms["feedbackForm"]["fEmail"].value;
@@ -189,10 +216,9 @@ function validateAndSubmit() {
   }
 
 
-  //Not validating Inform Local Businesses & Recruiters
-  //console.log("Inform Local = " + rInformLocal);
-  //Not validating Message (Openended Free Text)
-  //console.log("Message = " + rMsg);
+  //Not validating PMGI
+  console.log("PMGI = " + rPMGI);
+
 
   if (!goodToGo) {
     if (numIssues == 1)
