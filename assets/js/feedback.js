@@ -9,10 +9,10 @@ var smallScr = width < 768;
 //Array for Good/Bad/Ok
 var goodBadOK = [
   "",  //Empty value
-  "&#128078; &nbsp; - &nbsp Poor", //Thumbs down
-  "&#128075; &nbsp; - &nbsp Mediocre", //Wavering hand
-  "&#128076; &nbsp; - &nbsp Good", //OK hand
-  "&#128077; &nbsp; - &nbsp; Impressive", //Thumbs up
+  "Poor &nbsp; - &nbsp &#128078;", //Thumbs down
+  "Mediocre &nbsp; - &nbsp &#128075;", //Wavering hand
+  "Good &nbsp; - &nbsp &#128076;", //OK hand
+  "Impressive &nbsp; - &nbsp; &#128077;", //Thumbs up
 ];
 
 //Fetching HTML elements in variables by ID
@@ -23,8 +23,7 @@ createForm.setAttribute("id", "feedbackForm");
 createForm.setAttribute("name", "feedbackForm");
 
 //Setting action attribute on form
-//TODO - FIX COMMENTING OUT ONCE TESTING COMPLETE, ADD CORRECT URL
-//createForm.setAttribute("action", "https://getform.org/f/8efa573d-cf21-4c40-b2e3-0ffd0b1a702e");
+createForm.setAttribute("action", "https://www.getform.org/f/412b65e2-6249-4705-a05c-da529b156d08");
 
 //Setting method attribute on form
 createForm.setAttribute("method", "POST");
@@ -137,7 +136,7 @@ createForm.appendChild(document.createElement('br'));
 //Email
 var emailLabel = document.createElement('label');
 emailLabel.innerHTML = "<font color=\"red\">*</font>Your Email: &nbsp;";
-//emailLabel.style.display = "None";
+emailLabel.style.display = "none";
 createForm.appendChild(emailLabel);
 
 if (smallScr) createForm.appendChild(document.createElement('br'));
@@ -146,10 +145,12 @@ var emailInput = document.createElement('input');
 emailInput.setAttribute("type", "text");
 emailInput.setAttribute("name", "fEmail");
 emailInput.setAttribute("placeholder", "nothanks@notarealemailaddress.com");
-//emailInput.style.display = "None";
+emailInput.style.display = "none";
 createForm.appendChild(emailInput);
 
-createForm.appendChild(document.createElement('br'));
+var removableBreak = document.createElement('br')
+removableBreak.style.display = "none";
+createForm.appendChild(removableBreak);
 
 
 //-------------------------------------------------
@@ -163,6 +164,25 @@ submit.setAttribute("class", "btn btn-primary");
 submit.setAttribute("onclick", "validateAndSubmit()");
 submit.innerHTML = "Submit";
 createForm.appendChild(submit);
+
+
+//-------------------------------------------------
+//Event Listener for Slider/Checkbox to show email
+var slider = document.querySelector("input[name=fFollowUp]");
+slider.addEventListener('change', function() {
+  if (this.checked) {
+    //alert("ON!");
+    emailLabel.style.display = "";
+    emailInput.style.display = "";
+    removableBreak.style.display = "";
+  }
+  else {
+    //alert("OFF!");
+    emailLabel.style.display = "none";
+    emailInput.style.display = "none";
+    removableBreak.style.display = "none";
+  }
+});
 
 
 //-------------------------------------------------
@@ -217,7 +237,7 @@ function validateAndSubmit() {
 
 
   //Not validating PMGI
-  console.log("PMGI = " + rPMGI);
+  //console.log("PMGI = " + rPMGI);
 
 
   if (!goodToGo) {
@@ -227,9 +247,8 @@ function validateAndSubmit() {
       alert(numIssues + " issues found:\n" + validationMsg);
   }
   else {
-      //Submit the form
-    //TODO - FIX COMMENTING OUT ONCE TESTING COMPLETE, ADD CORRECT URL
-    //document.feedbackForm.action="https://getform.org/f/8efa573d-cf21-4c40-b2e3-0ffd0b1a702e";
+    //Submit the form
+    document.feedbackForm.action="https://www.getform.org/f/412b65e2-6249-4705-a05c-da529b156d08";
     document.feedbackForm.submit();
 
     var info = "<div class=\"text-center\"><hr><h3>You're all set!</h3><br />";
