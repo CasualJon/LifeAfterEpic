@@ -129,12 +129,12 @@ var firms = [
     confirmed: false
   },
 
-  { name: "Navigant/McKinnis Consulting (MultiCare)",
-    website: "http://mckinnisconsulting.com/",
-    logo: "../assets/img/consulting/mckinnis.png",
-    twitter: "https://twitter.com/McKinnisCS",
-    linkedin: "https://www.linkedin.com/company/2024512/",
-    glassdoor: "https://www.glassdoor.com/Overview/Working-at-McKinnis-Consulting-Services-EI_IE869657.11,39.htm",
+  { name: "Navigant (McKinnis Consulting/MultiCare)",
+    website: "https://www.navigant.com/",
+    logo: "../assets/img/consulting/navigant.png",
+    twitter: "https://twitter.com/NavigantHealth",
+    linkedin: "https://www.linkedin.com/company/4904/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Navigant-EI_IE6236.11,19.htm",
     confirmed: true
   },
 
