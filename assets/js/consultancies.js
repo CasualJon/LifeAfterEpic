@@ -202,7 +202,7 @@ var firms = [
   },
 
   { name: "The Wilshire Group Associates",
-    website: "https://http://thewilshiregroup.net",
+    website: "http://thewilshiregroup.net",
     logo: "../assets/img/consulting/wilshiregroup.jpg",
     twitter: "https://twitter.com/TheWilshireGrp",
     linkedin: "https://www.linkedin.com/company/the-wilshire-group-associates/",
