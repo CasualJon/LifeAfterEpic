@@ -81,7 +81,7 @@ var firms = [
     twitter: "https://twitter.com/SantaRosaC",
     linkedin: "https://www.linkedin.com/company/390402/",
     glassdoor: null,
-    confirmed: false
+    confirmed: true
   },
 
   { name: "Belmero, Inc.",
