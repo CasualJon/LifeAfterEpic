@@ -144,7 +144,7 @@ if (smallScr) createForm.appendChild(document.createElement('br'));
 var emailInput = document.createElement('input');
 emailInput.setAttribute("type", "text");
 emailInput.setAttribute("name", "fEmail");
-emailInput.setAttribute("placeholder", "nothanks@notarealemailaddress.com");
+emailInput.setAttribute("placeholder", "email@example.com");
 emailInput.style.display = "none";
 createForm.appendChild(emailInput);
 
