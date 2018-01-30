@@ -254,7 +254,7 @@ var ventures = [
   { name: "Revel",
     website: "https://revelmadison.com/",
     logo: "../assets/img/ventures/revel.png",
-    twitter: null,
+    twitter: "https://twitter.com/RevelMadison",
     linkedin: null,
     facebook: "https://www.facebook.com/RevelMadison",
     about: "A modern DIY studio and event space just off the Capitol Square! Complete projects while socializing and enjoying a drink or snack from our bar, we'll clean up afterwards!",
