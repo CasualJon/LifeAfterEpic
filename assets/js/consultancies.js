@@ -225,7 +225,16 @@ var firms = [
     twitter: "https://twitter.com/T3KHealth",
     linkedin: "https://www.linkedin.com/company/3060022/",
     glassdoor: null,
-    confirmed: false
+    confirmed: true
+  },
+
+  { name: "Chi-Matic",
+    website: "https://www.chi-matic.com",
+    logo: "../assets/img/consulting/chimatic.jpg",
+    twitter: "https://twitter.com/chi_matic",
+    linkedin: "https://www.linkedin.com/company/23560887/",
+    glassdoor: null,
+    confirmed: true
   },
 ];
 

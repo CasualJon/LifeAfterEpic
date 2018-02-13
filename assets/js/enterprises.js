@@ -274,6 +274,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+
+  { name: "Chi-Matic",
+    website: "https://www.chi-matic.com",
+    logo: "../assets/img/consulting/chimatic.jpg",
+    twitter: "https://twitter.com/chi_matic",
+    linkedin: "https://www.linkedin.com/company/23560887/",
+    facebook: null,
+    about: null,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
