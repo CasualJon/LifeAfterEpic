@@ -285,6 +285,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+
+  { name: "Downshift Consulting",
+    website: "https://www.downshiftconsulting.com/",
+    logo: "../assets/img/consulting/downshift.jpg",
+    twitter: "https://twitter.com/DownshiftHIT",
+    linkedin: "https://www.linkedin.com/company/27204761/",
+    facebook: null,
+    about: null,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');

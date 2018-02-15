@@ -236,6 +236,15 @@ var firms = [
     glassdoor: null,
     confirmed: true
   },
+
+  { name: "Downshift Consulting",
+    website: "https://www.downshiftconsulting.com/",
+    logo: "../assets/img/consulting/downshift.jpg",
+    twitter: "https://twitter.com/DownshiftHIT",
+    linkedin: "https://www.linkedin.com/company/27204761/",
+    glassdoor: null,
+    confirmed: false
+  },
 ];
 
 var confOutput = "";
