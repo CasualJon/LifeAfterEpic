@@ -8,13 +8,13 @@ function thingsToKnow() {
 
   data += "<button type=\"button\" class=\"btn btn-success\" onclick=\"thingsToKnow()\">Things to Know</button>&nbsp;";
   data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"cFirms()\">Consulting Firms</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-compete</button><br /><br />";
+  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-Compete</button><br /><br />";
 
 
   data += "<h4>Things I wish I knew before consulting (given by consultants)</h4>";
   data += "<div class=\"text-left\"><p><ul><small>";
 
-  data += "<li>Consulting is what rebuilt my confidence after leaving Epic. Seeing how much I had to contribute and how valued my work was saved me. That doesn't mean it doesn't feel thankless sometimes or that the travel doesn't get old, but I've found that customers feel like they picked YOU, and you just have to show them their choice was a good one. I have never received as much flattery and gratitude (some likely undeserved) as I have as a consultant.</li><br />";
+  data += "<li>Consulting is what rebuilt my confidence after leaving Epic. Seeing how much I had to contribute and how valued my work was what saved me. That doesn't mean it doesn't feel thankless sometimes or that the travel doesn't get old, but I've found that customers feel like they picked YOU, and you just have to show them their choice was a good one. I have never received as much flattery and gratitude (some likely undeserved) as I have as a consultant.</li><br />";
 
   data += "<li>You need a high tolerance for instability. I think I assumed there would always be a steady stream of contracts available, even if I had to take things short term that weren't really interesting to me, but that wasn't the case when I went up for my first contract switch. I left a contract at the end of December, and from January to mid-April I was looking for other contracts. At the beginning of the year contracts are really slow, and one that I thought I had locked down fell through at the last minute (i.e. the day before I was supposed to start). There is a lot of that instability and not a lot of the control is in your hands, and that was more stressful for me than I anticipated.</li><br />";
 
@@ -46,7 +46,7 @@ function cFirms() {
 
   data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"thingsToKnow()\">Things to Know</button>&nbsp;";
   data += "<button type=\"button\" class=\"btn btn-success\" onclick=\"cFirms()\">Consulting Firms</button>&nbsp;";
-  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-compete</button><br /><br />";
+  data += "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='../noncompete.html';\">Non-Compete</button><br /><br />";
 
   data += "<p><i>If you see incorrect information or needed changes, please get in touch!</i></p><br />";
   data += "<h4>Consulting firms actively providing Epic consulting services</h4>";
