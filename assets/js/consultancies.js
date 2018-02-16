@@ -274,7 +274,7 @@ function constructFirmTables() {
 
     confOutput += "<tr><td scope=\"row\">";
 
-    //Logo
+    //Logo - NOTE: does not protect against null; assumes entries have a website
     confOutput += "<a href=\"" + randFirms[i].website + "\" target=\"_blank\"> <img src=\"";
     confOutput += randFirms[i].logo;
     confOutput += "\" alt=\"Firm Logo\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
@@ -335,7 +335,7 @@ function constructFirmTables() {
 function buildUnconfirmed(obj) {
   unconfOutput += "<tr><td scope=\"row\">";
 
-  //Logo
+  //Logo - NOTE: does not protect against null; assumes entries have a website
   unconfOutput += "<a href=\"" + obj.website + "\" target=\"_blank\"> <img src=\"";
   unconfOutput += obj.logo;
   unconfOutput += "\" alt=\"Firm Logo\" class=\"center-block\" height=\"32\" width=\"32\"/></a>";
