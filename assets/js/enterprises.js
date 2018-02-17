@@ -22,7 +22,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Vonlay",
     website: "https://www.huronconsultinggroup.com/",
     logo: "../assets/img/ventures/vonlay.png",
@@ -34,7 +33,6 @@ var ventures = [
     acquired: true,
     parent: "Huron Consulting Group",
   },
-
   { name: "Sagacious Consultants",
     website: "http://www.sagaciousconsultants.com/index.html",
     logo: "../assets/img/consulting/sagacious.png",
@@ -46,7 +44,6 @@ var ventures = [
     acquired: true,
     parent: "Accenture",
   },
-
   { name: "Falcon Consulting Group",
     website: "https://www.avaap.com/",
     logo: "../assets/img/ventures/falcon.jpg",
@@ -58,7 +55,6 @@ var ventures = [
     acquired: true,
     parent: "Aavap",
   },
-
   { name: "Cipe Consulting",
     website: "http://www.cumberlandcg.com/",
     logo: "../assets/img/ventures/cipe.jpg",
@@ -70,7 +66,6 @@ var ventures = [
     acquired: true,
     parent: "Cumberland Consulting Group",
   },
-
   { name: "Umbrella Health IT",
     website: "http://www.umbrellahealthit.com/",
     logo: "../assets/img/consulting/umbrella.png",
@@ -82,7 +77,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "ARCH Group, LLC",
     website: "http://www.myarchgroup.com/index.php/home",
     logo: "../assets/img/consulting/arch.png",
@@ -94,7 +88,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "T3K Health",
     website: "http://www.t3khealth.com/",
     logo: "../assets/img/consulting/t3k.png",
@@ -106,7 +99,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Redox",
     website: "https://www.redoxengine.com/",
     logo: "../assets/img/ventures/redox.png",
@@ -118,7 +110,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Tri 4 Schools",
     website: "http://www.tri4schools.org/",
     logo: "../assets/img/ventures/tri4schools.jpg",
@@ -130,7 +121,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "100state",
     website: "https://100state.com/",
     logo: "../assets/img/ventures/100state.jpg",
@@ -142,7 +132,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Zing Collaborative",
     website: "http://www.zingcollaborative.com/",
     logo: "../assets/img/ventures/zing.jpg",
@@ -154,7 +143,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Isthmus Bubble Soccer",
     website: "http://www.isthmusbubblesoccer.com/",
     logo: "../assets/img/ventures/isthmusbubblesoccer.jpeg",
@@ -166,7 +154,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Rule the Room",
     website: "http://ruletheroompublicspeaking.com/",
     logo: "../assets/img/ventures/ruletheroom.png",
@@ -178,7 +165,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "altSTATES Travel",
     website: "https://www.altstatestravel.com/",
     logo: "../assets/img/ventures/altstates.jpg",
@@ -190,19 +176,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Black Earth Children's Museum",
     website: "https://www.blackearthchildrensmuseum.org/",
     logo: "../assets/img/ventures/bechildrens.png",
     twitter: null,
     linkedin: null,
     facebook: "https://www.facebook.com/blackearthchildrensmuseum/",
-    about: "Our mission is to inspire youth and families to discover more about themselves, their communities and their world through interactive learning.",
+    about: "Inspiring youth and families to discover more about themselves, their communities and their world through interactive learning.",
     category: orgType.NONPROFIT,
     acquired: false,
     parent: null,
   },
-
   { name: "Whiz.ai",
     website: "https://whiz.ai/",
     logo: "../assets/img/ventures/whizai.jpg",
@@ -214,7 +198,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Moxe Health",
     website: "https://www.moxehealth.com/",
     logo: "../assets/img/ventures/moxe.jpg",
@@ -226,7 +209,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "CenterX",
     website: "http://www.centerx.com/",
     logo: "../assets/img/ventures/centerx.png",
@@ -238,7 +220,6 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Health eFilings",
     website: "https://healthefilings.com/",
     logo: "../assets/img/ventures/healthefilings.png",
@@ -250,31 +231,28 @@ var ventures = [
     acquired: false,
     parent: null,
   },
-
   { name: "Revel",
     website: "https://revelmadison.com/",
     logo: "../assets/img/ventures/revel.png",
     twitter: "https://twitter.com/RevelMadison",
     linkedin: null,
     facebook: "https://www.facebook.com/RevelMadison",
-    about: "A modern DIY studio and event space just off the Capitol Square! Complete projects while socializing and enjoying a drink or snack from our bar, we'll clean up afterwards!",
+    about: "A DIY studio & event space just off the Capitol Square! Complete projects while socializing and enjoying a drink or snack from our bar, we'll clean up afterwards!",
     category: orgType.OTHER,
     acquired: false,
     parent: null,
   },
-
   { name: "Patronus Health",
     website: "https://patronushealth.co/",
     logo: "../assets/img/ventures/patronus.jpg",
     twitter: "https://twitter.com/PatronusHealth/",
     linkedin: "https://www.linkedin.com/company/24968649/",
     facebook: "https://www.facebook.com/PatronusHealth/",
-    about: "Patronus Health is a healthcare advocacy startup focused on eliminating the burden of medical debt in the US by negotiating fair market costs for medical services.",
+    about: "A healthcare advocacy startup focused on eliminating the burden of medical debt by negotiating fair market costs for medical services.",
     category: orgType.SERVICES,
     acquired: false,
     parent: null,
   },
-
   { name: "Chi-Matic",
     website: "https://www.chi-matic.com",
     logo: "../assets/img/consulting/chimatic.jpg",
@@ -282,10 +260,10 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/23560887/",
     facebook: null,
     about: null,
+    category: orgType.CONSULTING,
     acquired: false,
     parent: null,
   },
-
   { name: "Downshift Consulting",
     website: "https://www.downshiftconsulting.com/",
     logo: "../assets/img/consulting/downshift.jpg",
@@ -293,6 +271,18 @@ var ventures = [
     linkedin: "https://www.linkedin.com/company/27204761/",
     facebook: null,
     about: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
+  },
+  { name: "Ted Gurman Coaching",
+    website: "https://www.tedgurman.com/",
+    logo: "../assets/img/ventures/tedgurman.png",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/27250858/",
+    facebook: null,
+    about: "Helping clients shift from surviving to thriving. Coaching across a range of categories focused on building self-understanding and self-awareness.",
+    category: orgType.SERVICES,
     acquired: false,
     parent: null,
   },

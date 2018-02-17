@@ -8,72 +8,72 @@
 
 <url>
   <loc>http://lifeafterepic.com/</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/thinking.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/index.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lifeafterepic.com/disclaimer.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lifeafterepic.com/noncompete.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/profiles.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://lifeafterepic.com/disclaimer.html</loc>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/school.html</loc>
-  <lastmod>2018-01-18T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/networking.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/resume.html</loc>
-  <lastmod>2018-01-18T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/employment.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lifeafterepic.com/resourcepgs/consulting.html</loc>
-  <lastmod>2018-01-02T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/enterprises.html</loc>
-  <lastmod>2018-01-18T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/resourcepgs/feedback.html</loc>
-  <lastmod>2018-01-18T22:04:31+00:00</lastmod>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
   <priority>0.60</priority>
+</url>
+<url>
+  <loc>http://lifeafterepic.com/resourcepgs/consulting.html</loc>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://lifeafterepic.com/noncompete.html</loc>
+  <lastmod>	2018-02-16T16:20:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lifeafterepic.com/assets/action-verbs.pdf</loc>
   <lastmod>2018-01-02T22:04:31+00:00</lastmod>
-  <priority>0.20</priority>
+  <priority>0.40</priority>
 </url>
 </urlset>
