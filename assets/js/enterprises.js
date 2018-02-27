@@ -281,7 +281,7 @@ var ventures = [
     twitter: null,
     linkedin: "https://www.linkedin.com/company/27250858/",
     facebook: null,
-    about: "Helping clients shift from surviving to thriving! Coaching across a range of categories focused on building self-understanding and self-awareness.",
+    about: "Helping clients shift from surviving to thriving!<br />Coaching across a range of categories focused on building self-understanding and self-awareness.",
     category: orgType.SERVICES,
     acquired: false,
     parent: null,
