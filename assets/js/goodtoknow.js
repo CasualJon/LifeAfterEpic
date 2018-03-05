@@ -15,6 +15,7 @@ var articles = [
     external: true,
     contributor: "develoPMentmemo.com",
     logo: "../assets/img/contributors/develoPMentmemo.png",
+    website: "http://developmentmemo.com/",
     category: articleType.EDUCATION,
     about: "Project management thoughts and lessons learned.",
   },
@@ -60,7 +61,9 @@ function constructTables() {
 
 
 function buildPersonal(obj) {
-  personalOutput += "<tr><td scope=\"row\">";
+  //TODO - add headers (but use td tags) once content available
+  personalOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  personalOutput += "<tr><td>";
 
   //Article/content title--------------
   personalOutput += "<a href=\"" + obj.link + "\"";
@@ -71,24 +74,25 @@ function buildPersonal(obj) {
 
   personalOutput += "><big>" + obj.title + "</big></a></td>";
 
-  //Article contributor/source logo------
-  personalOutput += "<td><img src=\"";
-  personalOutput += obj.logo;
-  personalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
-  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
-  personalOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+  //Article about section --------------
+  personalOutput += "<td><small><small>" + obj.about + "</small></small></td>";
 
   //Article contributor/source----------
-  personalOutput += obj.contributor;
-  personalOutput += "</td><td>";
+  personalOutput += "<td>" + obj.contributor;
+  personalOutput += "</td>";
 
-  //Article about section --------------
-  personalOutput += "<small><small>" + obj.about + "</small></small></td></tr>";
+  //Article contributor/source logo------
+  personalOutput += "<td><a href=\"" + obj.website + "\" target=\"_blank\"><img src=\"";
+  personalOutput += obj.logo;
+  personalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
+  personalOutput += "</td></tr>";
 }
 
 
 function buildProfessional(obj) {
-  professionalOutput += "<tr><td scope=\"row\">";
+  //TODO - add headers (but use td tags) once content available
+  professionalOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  professionalOutput += "<tr><td>";
 
   //Article/content title--------------
   professionalOutput += "<a href=\"" + obj.link + "\"";
@@ -99,24 +103,24 @@ function buildProfessional(obj) {
 
   professionalOutput += "><big>" + obj.title + "</big></a></td>";
 
-  //Article contributor/source logo------
-  professionalOutput += "<td><img src=\"";
-  professionalOutput += obj.logo;
-  professionalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
-  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
-  professionalOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+  //Article about section --------------
+  professionalOutput += "<td><small><small>" + obj.about + "</small></small></td>";
 
   //Article contributor/source----------
-  professionalOutput += obj.contributor;
-  professionalOutput += "</td><td>";
+  professionalOutput += "<td>" + obj.contributor;
+  professionalOutput += "</td>";
 
-  //Article about section --------------
-  professionalOutput += "<small><small>" + obj.about + "</small></small></td></tr>";
+  //Article contributor/source logo------
+  professionalOutput += "<td><a href=\"" + obj.website + "\" target=\"_blank\"><img src=\"";
+  professionalOutput += obj.logo;
+  professionalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
+  professionalOutput += "</td></tr>";
 }
 
 
 function buildEducation(obj) {
-  educationOutput += "<tr><td scope=\"row\">";
+  educationOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  educationOutput += "<tr><td>";
 
   //Article/content title--------------
   educationOutput += "<a href=\"" + obj.link + "\"";
@@ -127,24 +131,26 @@ function buildEducation(obj) {
 
   educationOutput += "><big>" + obj.title + "</big></a></td>";
 
-  //Article contributor/source logo------
-  educationOutput += "<td><img src=\"";
-  educationOutput += obj.logo;
-  educationOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
-  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
-  educationOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+  //Article about section --------------
+  educationOutput += "<td><small><small>" + obj.about + "</small></small></td>";
 
   //Article contributor/source----------
-  educationOutput += obj.contributor;
-  educationOutput += "</td><td>";
+  educationOutput += "<td>" + obj.contributor;
+  educationOutput += "</td>";
 
-  //Article about section --------------
-  educationOutput += "<small><small>" + obj.about + "</small></small></td></tr>";
+  //Article contributor/source logo------
+  educationOutput += "<td><a href=\"" + obj.website + "\" target=\"_blank\"><img src=\"";
+  educationOutput += obj.logo;
+  educationOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
+  educationOutput += "</td></tr>";
+
 }
 
 
 function buildTips(obj) {
-  tipsOutput += "<tr><td scope=\"row\">";
+  //TODO - add headers (but use td tags) once content available
+  tipsOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  tipsOutput += "<tr><td>";
 
   //Article/content title--------------
   tipsOutput += "<a href=\"" + obj.link + "\"";
@@ -155,19 +161,18 @@ function buildTips(obj) {
 
   tipsOutput += "><big>" + obj.title + "</big></a></td>";
 
-  //Article contributor/source logo------
-  tipsOutput += "<td><img src=\"";
-  tipsOutput += obj.logo;
-  tipsOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
-  //Hack inserts empty column w/ 2 spacers for spacing buffer between logo & name
-  tipsOutput += "</td><td>&nbsp;&nbsp;</td><td>";
+  //Article about section --------------
+  tipsOutput += "<td><small><small>" + obj.about + "</small></small></td>";
 
   //Article contributor/source----------
-  tipsOutput += obj.contributor;
-  tipsOutput += "</td><td>";
+  tipsOutput += "<td>" + obj.contributor;
+  tipsOutput += "</td>";
 
-  //Article about section --------------
-  tipsOutput += "<small><small>" + obj.about + "</small></small></td></tr>";
+  //Article contributor/source logo------
+  tipsOutput += "<td><a href=\"" + obj.website + "\" target=\"_blank\"><img src=\"";
+  tipsOutput += obj.logo;
+  tipsOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
+  tipsOutput += "</td></tr>";
 }
 
 
