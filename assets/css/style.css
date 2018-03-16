@@ -369,6 +369,27 @@ input:checked + .slider:before {
     background-size: cover;
 }
 
+#gtkwrap {
+	background: url(../img/gtk_background.png) no-repeat;
+	margin-top: -70px;
+	padding-top: 150px;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: left top;
+	min-height: 250px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+/*  -moz-background-size: 100%; */
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+/*  -moz-background-size: cover; */
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #Epic_Non_Compete_Form button {
   width: 52%;
   height: 40px;
