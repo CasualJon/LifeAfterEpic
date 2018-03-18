@@ -19,7 +19,7 @@ var articles = [
     category: articleType.EDUCATION,
     about: "Project management thoughts and lessons learned.",
   },
-  { title: "How to make a change when you don't know what you want",
+  { title: "How To Make A Change When You Don't Know What You Want",
     link: "../gtk_articles/making_a_change.html",
     external: false,
     contributor: "Jon Cyrus",
