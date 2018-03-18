@@ -67,46 +67,65 @@
 	<div class="container">
 		<div class="row centered mt mb">
 			<div class="col-lg-10 col-lg-offset-1">
-        <!-- Article Title -->
-        <!-- <h3>How To Make A Change When You Don't Know What You Want</h3>
-        <br /> -->
 
         <!-- Article Attribution -->
-        <table class="table">
-          <tbody id="authorAndOrg">
-            <tr>
-              <td style="text-align: left">
-                <a href="#aboutContributor"><img src="../assets/img/contributors/jon_cyrus.png" width="72" /></a>
-              </td>
+        <section id="articleHeader">
+        </section>
 
-              <td style="text-align: left">
-                <small><small>Author:</small></small>
-                <a href="#aboutContributor"><h4>Jon Cyrus<h4></a>
+        <script type="text/javascript" id="headerTable">
+          var width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+          var smallScr = width < 768;
 
-                <!-- <a href="" target="_blank"><i class="fa fa-laptop"></i></a> -->
-                <!-- <a href=""><i class="fa fa-facebook"></i></a> -->
-                <a href="https://www.linkedin.com/in/jon-cyrus/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://twitter.com/CasualJon" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="mailto:jon@joncyrus.com?subject=Your%20LAE%20Article"><i class="fa fa-envelope"></i></a>
-              </td>
+          var articleHeader = document.getElementById('articleHeader');
+          var data = "";
 
-              <td style="text-align: left">
-                <a href="#aboutContributor"><img src="../assets/img/fav/twitter-card-144x144.png" width="72" /></a>
-              </td>
+          data += "<table class=\"table\">";
+          data += "<tbody id=\"authorAndOrg\">";
+          data += "<tr>";
+          data += "<td style=\"text-align: left\">";
+          data += "<a href=\"#aboutContributor\"><img src=\"../assets/img/contributors/jon_cyrus.png\" width=\"72\" /></a>"
+          data += "</td>";
 
-              <td style="text-align: left">
-                <small><small>Organization:</small></small>
-                <a href="#aboutContributor"><h4>LifeAfterEpic.com<h4></a>
+          data += "<td style=\"text-align: left\">";
+          data += "<small><small>Author:</small></small>";
+          data += "<a href=\"#aboutContributor\"><h4>Jon Cyrus<h4></a>";
 
-                <a href="http://lifeafterepic.com" target="_blank"><i class="fa fa-laptop"></i></a>
-                <!-- <a href=""><i class="fa fa-facebook"></i></a> -->
-                <!-- <a href=""><i class="fa fa-linkedin"></i></a> -->
-                <a href="https://twitter.com/LifeAfterEpic" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="mailto:info@lifeafterepic.com?subject=Your%20LAE%20Article"><i class="fa fa-envelope"></i></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+          //data += "<a href=\"\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+          //data += "<a href=\"\"><i class=\"fa fa-facebook\"></i></a>";
+          data += "<a href=\"https://www.linkedin.com/in/jon-cyrus/\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a>";
+          data += "<a href=\"https://twitter.com/CasualJon\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+          data += "<a href=\"mailto:jon@joncyrus.com?subject=Your%20LAE%20Article\"><i class=\"fa fa-envelope\"></i></a>";
+          data += "</td>";
+
+          //Split table if small screen
+          if (smallScr) {
+            data += "</tr><tr>";
+          }
+
+          data += "<td style=\"text-align: left\">";
+          data += "<a href=\"#aboutContributor\"><img src=\"../assets/img/fav/twitter-card-144x144.png\" width=\"72\" /></a>";
+          data += "</td>";
+
+          data += "<td style=\"text-align: left\">";
+          data += "<small><small>Organization:</small></small>";
+          data += "<a href=\"#aboutContributor\"><h4>LifeAfterEpic.com<h4></a>";
+
+          data += "<a href=\"http://lifeafterepic.com\" target=\"_blank\"><i class=\"fa fa-laptop\"></i></a>";
+          //data += "<a href=""><i class=\"fa fa-facebook\"></i></a>";
+          //data += "<a href=""><i class=\"fa fa-linkedin\"></i></a>";
+          data += "<a href=\"https://twitter.com/LifeAfterEpic\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>";
+          data += "<a href=\"mailto:info@lifeafterepic.com?subject=Your%20LAE%20Article\"><i class=\"fa fa-envelope\"></i></a>";
+          data += "</td>";
+          data += "</tr>";
+          data += "</tbody>";
+          data += "</table>";
+
+          articleHeader.innerHTML = data;
+        </script>
+
         <hr><br />
 
         <!-- Article Title -->
