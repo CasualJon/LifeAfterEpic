@@ -52,7 +52,7 @@ function cFirms() {
   data += "<h4>Consulting firms actively providing Epic consulting services</h4>";
   data += "<p>Presented in randomized order. Know that not all are equal, but this page isn't here to play favorites.</p><br /><br />";
 
-  data += "<div class=\"table-responsive\">";
+  data += "<div class=\"container\">";
   data += "<table class=\"table\">";
   data += "<tbody id=\"confirmedFirms\">";
   data += tables[0];
@@ -61,7 +61,7 @@ function cFirms() {
   data += "<br /><h4>Uncertain placement: firms rumored/claiming to offer Epic services, but unable to verify current Epic customers</h4>";
   data += "<p>Presented in randomized order.</p><br />";
 
-  data += "<div class=\"table-responsive\">";
+  data += "<div class=\"container\">";
   data += "<table class=\"table\">";
   data += "<tbody id=\"unconFirms\">";
   data +=  tables[1];
