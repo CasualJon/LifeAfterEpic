@@ -286,6 +286,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+  { name: "Trifecta General Counsel",
+    website: "https://trifectagc.com/",
+    logo: "../assets/img/ventures/trifecta.jpg",
+    twitter: "https://twitter.com/TrifectaGC",
+    linkedin: "https://www.linkedin.com/company/15090326/",
+    facebook: null,
+    about: "Trifecta General Counsel is your digital health legal department: refreshing new techniques to deliver fast, friendly, and effective legal support.",
+    category: orgType.SERVICES,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
