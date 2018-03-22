@@ -117,7 +117,7 @@ var firms = [
     twitter: "https://twitter.com/CTGinc",
     linkedin: "https://www.linkedin.com/company/ctginc/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Computer-Task-Group-EI_IE170.11,30.htm",
-    confirmed: true
+    confirmed: false
   },
 
   { name: "314e Corporation",
@@ -180,7 +180,7 @@ var firms = [
     twitter: "https://twitter.com/OrchestrateHC",
     linkedin: "https://www.linkedin.com/company/orchestrate-healthcare/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Orchestrate-Healthcare-EI_IE521478.11,33.htm",
-    confirmed: true
+    confirmed: false
   },
 
   { name: "Hayes Management Consulting",
