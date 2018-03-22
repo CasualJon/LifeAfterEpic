@@ -78,6 +78,7 @@ var epicCertList = [
   "Prelude",
   "Radar",
   "Radiant",
+  "Real Time Eligibility",
   "Referrals",
   "Rehab",
   "Reporting Workbench",
