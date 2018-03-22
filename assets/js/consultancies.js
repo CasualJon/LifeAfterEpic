@@ -263,6 +263,15 @@ var firms = [
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Kupplin-Worldwide-EI_IE910288.11,28.htm",
     confirmed: true
   },
+
+  { name: "Parallon Technology Solutions (HCA)",
+    website: "https://parallontechnology.com/",
+    logo: "../assets/img/consulting/parallon.jpg",
+    twitter: "https://twitter.com/parallontech/",
+    linkedin: "https://www.linkedin.com/company/parallon-technology-solutions/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Parallon-EI_IE460681.11,19.htm",
+    confirmed: true
+  },
 ];
 
 var confOutput = "";
