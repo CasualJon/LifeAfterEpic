@@ -297,6 +297,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+  { name: "Prominence Advisors",
+    website: "http://prominenceadvisors.com/",
+    logo: "../assets/img/consulting/prominence.jpg",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/2282953/",
+    facebook: "https://www.facebook.com/ProminenceAdvisors",
+    about: null,
+    category: orgType.CONSULTING,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');

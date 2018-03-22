@@ -245,6 +245,24 @@ var firms = [
     glassdoor: null,
     confirmed: false
   },
+
+  { name: "Prominence Advisors",
+    website: "http://prominenceadvisors.com/",
+    logo: "../assets/img/consulting/prominence.jpg",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/2282953/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Prominence-Advisors-EI_IE801047.11,30.htm",
+    confirmed: true
+  },
+
+  { name: "Kupplin Worldwide (SOAL Technologies)",
+    website: "http://kupplin.com/",
+    logo: "../assets/img/consulting/kupplin.png",
+    twitter: "https://twitter.com/soaltech",
+    linkedin: "https://www.linkedin.com/company/3807145/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Kupplin-Worldwide-EI_IE910288.11,28.htm",
+    confirmed: true
+  },
 ];
 
 var confOutput = "";
