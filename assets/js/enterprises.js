@@ -308,6 +308,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+  { name: "Karla Marie Coaching",
+    website: "http://karlamariecoach.com",
+    logo: "../assets/img/ventures/karlamarie.jpg",
+    twitter: null,
+    linkedin: "https://www.linkedin.com/company/karlamariecoaching/",
+    facebook: null,
+    about: "Personal development coaching for leaders in the tech industry. Coaching brings new perspectives to help you understand your leadership style, develop problem solving tactics, and build self-awareness.",
+    category: orgType.SERVICES,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
