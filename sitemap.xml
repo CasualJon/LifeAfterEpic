@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>http://lifeafterepic.com/thinking.html</loc>
-    <lastmod>	2018-03-18T16:20:41+00:00</lastmod>
+    <lastmod>	2018-04-05T16:20:41+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -21,13 +21,23 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://lifeafterepic.com/profiles.html</loc>
-    <lastmod>	2018-03-18T16:20:41+00:00</lastmod>
+    <loc>http://lifeafterepic.com/profiles/current-profile.html</loc>
+    <lastmod>2018-04-05T12:35:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://lifeafterepic.com/profiles/all-profiles.html</loc>
+    <lastmod>2018-04-05T12:35:19+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>http://lifeafterepic.com/disclaimer.html</loc>
-    <lastmod>	2018-03-18T16:20:41+00:00</lastmod>
+    <lastmod>	2018-04-05T16:20:41+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://lifeafterepic.com/contentupdates.html</loc>
+    <lastmod>2018-04-05T12:35:19+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -79,6 +89,16 @@
     <loc>http://lifeafterepic.com/resourcepgs/feedback.html</loc>
     <lastmod>	2018-03-18T16:20:41+00:00</lastmod>
     <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>http://lifeafterepic.com/profiles/2018/kjmiller2018.html</loc>
+    <lastmod>2018-04-05T12:35:19+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>http://lifeafterepic.com/profiles/2018/chbutsch2018.html</loc>
+    <lastmod>2018-04-05T12:35:19+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>http://lifeafterepic.com/assets/action-verbs.pdf</loc>
