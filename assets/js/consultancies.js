@@ -33,7 +33,7 @@ var firms = [
   { name: "Huron Consulting Group (Vonlay)",
     website: "https://www.huronconsultinggroup.com/",
     logo: "../assets/img/consulting/huron.jpg",
-    twitter: null,
+    twitter: "https://twitter.com/Huron",
     linkedin: "https://www.linkedin.com/company/5751/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Huron-Consulting-Group-EI_IE35223.11,33.htm",
     confirmed: true
@@ -270,6 +270,15 @@ var firms = [
     twitter: "https://twitter.com/parallontech/",
     linkedin: "https://www.linkedin.com/company/parallon-technology-solutions/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Parallon-EI_IE460681.11,19.htm",
+    confirmed: true
+  },
+
+  { name: "Clinovations (Advisory Board)",
+    website: "https://www.advisory.com/consulting/clinovations",
+    logo: "../assets/img/consulting/advisoryboard.jpg",
+    twitter: "https://twitter.com/AdvisoryBd",
+    linkedin: "https://www.linkedin.com/company/the-advisory-board-company/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Advisory-Board-EI_IE13494.11,25.htm",
     confirmed: true
   },
 ];
