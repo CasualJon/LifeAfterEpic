@@ -28,6 +28,15 @@ var articles = [
     category: articleType.PERSONAL,
     about: "When all you know is that you want a change, but don't know what you want, where to look, or how to start.",
   },
+  { title: "Epic to MBA",
+    link: "../gtk_articles/epic_to_mba.html",
+    external: false,
+    contributor: "Reddit u/caveman714",
+    logo: "../assets/img/contributors/orgs/reddit.png",
+    website: "https://www.reddit.com/r/epicsystems/",
+    category: articleType.PROFESSIONAL,
+    about: "If you're interested in chasing your MBA and want to know more, this is for you.",
+  },
 ];
 
 var subPage = document.getElementById('gtkContent');
@@ -71,7 +80,7 @@ function constructTables() {
 
 function buildPersonal(obj) {
   //TODO - add headers (but use td tags) once content available
-  personalOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  personalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
   personalOutput += "<tr><td>";
 
   //Article/content title--------------
@@ -100,7 +109,7 @@ function buildPersonal(obj) {
 
 function buildProfessional(obj) {
   //TODO - add headers (but use td tags) once content available
-  professionalOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  professionalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
   professionalOutput += "<tr><td>";
 
   //Article/content title--------------
@@ -128,7 +137,7 @@ function buildProfessional(obj) {
 
 
 function buildEducation(obj) {
-  educationOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  educationOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
   educationOutput += "<tr><td>";
 
   //Article/content title--------------
@@ -158,7 +167,7 @@ function buildEducation(obj) {
 
 function buildTips(obj) {
   //TODO - add headers (but use td tags) once content available
-  tipsOutput += "<tr><td>Title</td><td>About</td><td>Contributor</td><td>Logo</td></tr>";
+  tipsOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
   tipsOutput += "<tr><td>";
 
   //Article/content title--------------
