@@ -281,6 +281,15 @@ var firms = [
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Advisory-Board-EI_IE13494.11,25.htm",
     confirmed: true
   },
+
+  { name: "Oxford Global Resources",
+    website: "https://oxfordcorp.com/",
+    logo: "../assets/img/consulting/oxford.jpg",
+    twitter: "https://twitter.com/CareersAtOxford",
+    linkedin: "https://www.linkedin.com/company/oxford-global-resources/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Oxford-Global-Resources-EI_IE33499.11,34.htm",
+    confirmed: true
+  },
 ];
 
 var confOutput = "";
