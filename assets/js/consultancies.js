@@ -283,7 +283,7 @@ var firms = [
   },
 
   { name: "Oxford Global Resources",
-    website: "https://oxfordcorp.com/",
+    website: "https://www.oxfordcorp.com/specialties/healthcare-technology",
     logo: "../assets/img/consulting/oxford.jpg",
     twitter: "https://twitter.com/CareersAtOxford",
     linkedin: "https://www.linkedin.com/company/oxford-global-resources/",
