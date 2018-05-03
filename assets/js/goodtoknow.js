@@ -37,6 +37,15 @@ var articles = [
     category: articleType.PROFESSIONAL,
     about: "If you're interested in chasing your MBA and want to know more, this is for you.",
   },
+  { title: "Speaking of Epic",
+    link: "../gtk_articles/speaking_of_epic.html",
+    external: false,
+    contributor: "Briana Wagner",
+    logo: "../assets/img/fav/twitter-card-144x144.png",
+    website: "http://lifeafterepic.com/",
+    category: articleType.TIPS,
+    about: "How to talk about Epic with those unfamiliar.",
+  },
 ];
 
 var subPage = document.getElementById('gtkContent');
