@@ -404,7 +404,7 @@ function validateAndSubmit() {
   //LinkedIn Validation -----------
   //RegEx Testing:
   if (rLIn != null && rLIn != "") {
-    var linRE = new RegExp("^(https://www[\056]linkedin[\056]com/in/|https://linkedin[\056]com/in/|www[\056]linkedin[\056]com/in/|linkedin[\056]com/in/|/in/|in/|/)?([a-zA-Z0-9\055\137]){5,30}(/)?$");
+    var linRE = new RegExp("^(https://www[\056]linkedin[\056]com/in/|https://linkedin[\056]com/in/|www[\056]linkedin[\056]com/in/|linkedin[\056]com/in/|/in/|in/|/)?([a-zA-Z0-9\045\056\055\137]){5,30}(/)?$");
     //console.log("LinkedIn = " + rLIn);
     if (!linRE.test(rLIn)) {
       numIssues++;
