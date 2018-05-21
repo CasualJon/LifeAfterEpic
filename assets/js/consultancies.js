@@ -80,7 +80,7 @@ var firms = [
     logo: "../assets/img/consulting/santarosa.png",
     twitter: "https://twitter.com/SantaRosaC",
     linkedin: "https://www.linkedin.com/company/390402/",
-    glassdoor: null,
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Santa-Rosa-Consulting-EI_IE703553.11,32.htm",
     confirmed: true
   },
 
