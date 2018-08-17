@@ -171,7 +171,7 @@ var firms = [
     twitter: "https://twitter.com/StoltenbergCon",
     linkedin: "https://www.linkedin.com/company/108130/",
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-Stoltenberg-Consulting-EI_IE833775.11,33.htm",
-    confirmed: false
+    confirmed: true
   },
 
   { name: "Orchestrate Healthcare",
