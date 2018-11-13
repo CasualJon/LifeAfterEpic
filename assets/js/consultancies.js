@@ -299,6 +299,24 @@ var firms = [
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-HCTec-EI_IE831903.11,16.htm",
     confirmed: true
   },
+
+  { name: "Leidos",
+    website: "https://www.leidos.com/markets/health/hospital-systems/expertise/epic",
+    logo: "../assets/img/consulting/leidos.jpg",
+    twitter: "https://twitter.com/LeidosIn",
+    linkedin: "https://www.linkedin.com/showcase/leidoshealth/",
+    glassdoor: "https://www.glassdoor.com/Reviews/madison-leidos-health-reviews-SRCH_IL.0,7_IM518_KE8,21.htm",
+    confirmed: true
+  },
+
+  { name: "New Resources Consulting, Healthcare Solutions Group (fka Clinical Path)",
+    website: "http://hsg.nrconsults.com/emr-consulting-epic-consulting/",
+    logo: "../assets/img/consulting/nrc.jpg",
+    twitter: "https://twitter.com/NRConsults",
+    linkedin: "https://www.linkedin.com/company/new-resources-consulting/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-New-Resources-Consulting-EI_IE224255.11,35.htm",
+    confirmed: true
+  },
 ];
 
 var confOutput = "";
