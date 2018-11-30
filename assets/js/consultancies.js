@@ -317,6 +317,15 @@ var firms = [
     glassdoor: "https://www.glassdoor.com/Overview/Working-at-New-Resources-Consulting-EI_IE224255.11,35.htm",
     confirmed: true
   },
+
+    { name: "e4 Services",
+      website: "http://www.e4-services.com/",
+      logo: "../assets/img/consulting/e4.jpg",
+      twitter: "https://twitter.com/e4_Services",
+      linkedin: "https://www.linkedin.com/company/e4-",
+      glassdoor: "https://www.glassdoor.com/Overview/Working-at-e4-Services-EI_IE1413183.11,22.htm",
+      confirmed: false
+    },
 ];
 
 var confOutput = "";
