@@ -341,6 +341,17 @@ var ventures = [
     acquired: false,
     parent: null,
   },
+  { name: "Virgo Surgical Video Solutions",
+    website: "https://virgosvs.com/",
+    logo: "../assets/img/ventures/virgo.jpg",
+    twitter: "https://twitter.com/virgosvs",
+    linkedin: "https://www.linkedin.com/company/virgosvs/",
+    facebook: null,
+    about: "Virgo is a medical technology startup developing a hands-free, cloud-based, video recording system for colonoscopy.",
+    category: orgType.SOFTWARE,
+    acquired: false,
+    parent: null,
+  },
 ];
 
 var subPage = document.getElementById('enterprisesContent');
