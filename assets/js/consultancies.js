@@ -318,14 +318,41 @@ var firms = [
     confirmed: true
   },
 
-    { name: "e4 Services",
-      website: "http://www.e4-services.com/",
-      logo: "../assets/img/consulting/e4.jpg",
-      twitter: "https://twitter.com/e4_Services",
-      linkedin: "https://www.linkedin.com/company/e4-",
-      glassdoor: "https://www.glassdoor.com/Overview/Working-at-e4-Services-EI_IE1413183.11,22.htm",
-      confirmed: false
-    },
+  { name: "e4 Services",
+    website: "http://www.e4-services.com/",
+    logo: "../assets/img/consulting/e4.jpg",
+    twitter: "https://twitter.com/e4_Services",
+    linkedin: "https://www.linkedin.com/company/e4-",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-e4-Services-EI_IE1413183.11,22.htm",
+    confirmed: false
+  },
+
+  { name: "Divurgent",
+    website: "https://www.divurgent.com/",
+    logo: "../assets/img/consulting/divurgent.jpg",
+    twitter: "https://twitter.com/divurgent",
+    linkedin: "https://www.linkedin.com/company/divurgent/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Divurgent-EI_IE1053030.11,20.htm",
+    confirmed: false
+  },
+
+  { name: "ALKU",
+    website: "https://www.alku.com/",
+    logo: "../assets/img/consulting/alku.jpg",
+    twitter: "https://twitter.com/lifeatalku",
+    linkedin: "https://www.linkedin.com/company/the-start-group/",
+    glassdoor: null,
+    confirmed: false
+  },
+
+  { name: "Global Healthcare IT",
+    website: "https://www.globalhit.com/",
+    logo: "../assets/img/consulting/globalhit.jpg",
+    twitter: "https://twitter.com/_GlobalHIT",
+    linkedin: "https://www.linkedin.com/company/global-it-resources-inc-/",
+    glassdoor: "https://www.glassdoor.com/Overview/Working-at-Global-Healthcare-IT-EI_IE2198633.11,31.htm",
+    confirmed: false
+  },
 ];
 
 var confOutput = "";
