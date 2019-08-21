@@ -46,6 +46,15 @@ var articles = [
     category: articleType.TIPS,
     about: "How to talk about Epic with those unfamiliar.",
   },
+  { title: "Handling The Question Of Why You Left A Previous Employer",
+    link: "../gtk_articles/reason_for_leaving.html",
+    external: false,
+    contributor: "Jon Cyrus",
+    logo: "../assets/img/fav/twitter-card-144x144.png",
+    website: "http://lifeafterepic.com/",
+    category: articleType.TIPS,
+    about: "Regardless of tenure, this question often comes up during interviews.",
+  },
 ];
 
 var subPage = document.getElementById('gtkContent');
@@ -56,6 +65,7 @@ var professionalOutput = "";
 var educationOutput = "";
 var tipsOutput = "";
 var alreadyRun = false;
+var seenArr = [false, false, false, false];
 
 constructTables();
 buildData();
@@ -88,11 +98,11 @@ function constructTables() {
 
 
 function buildPersonal(obj) {
-  //TODO - add headers (but use td tags) once content available
-  personalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
-  personalOutput += "<tr><td>";
+  //Only add headers if first pass
+  if (!seenArr[0]) personalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
 
   //Article/content title--------------
+  personalOutput += "<tr><td>";
   personalOutput += "<a href=\"" + obj.link + "\"";
 
   //If external site or page, launch in new browser tab
@@ -113,15 +123,17 @@ function buildPersonal(obj) {
   personalOutput += obj.logo;
   personalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
   personalOutput += "</td></tr>";
+
+  seenArr[0] = true;
 }
 
 
 function buildProfessional(obj) {
-  //TODO - add headers (but use td tags) once content available
-  professionalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
-  professionalOutput += "<tr><td>";
+  //Only add headers if first pass
+  if (!seenArr[1]) professionalOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
 
   //Article/content title--------------
+  professionalOutput += "<tr><td>";
   professionalOutput += "<a href=\"" + obj.link + "\"";
 
   //If external site or page, launch in new browser tab
@@ -142,14 +154,17 @@ function buildProfessional(obj) {
   professionalOutput += obj.logo;
   professionalOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
   professionalOutput += "</td></tr>";
+
+  seenArr[1] = true;
 }
 
 
 function buildEducation(obj) {
-  educationOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
-  educationOutput += "<tr><td>";
+  //Only add headers if first pass
+  if (!seenArr[2]) educationOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
 
   //Article/content title--------------
+  educationOutput += "<tr><td>";
   educationOutput += "<a href=\"" + obj.link + "\"";
 
   //If external site or page, launch in new browser tab
@@ -171,15 +186,16 @@ function buildEducation(obj) {
   educationOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
   educationOutput += "</td></tr>";
 
+  seenArr[2] = true;
 }
 
 
 function buildTips(obj) {
-  //TODO - add headers (but use td tags) once content available
-  tipsOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
-  tipsOutput += "<tr><td>";
+  //Only add headers if first pass
+  if (!seenArr[3]) tipsOutput += "<tr><td style=\"width:35%\">Title</td><td style=\"width:35%\">About</td><td style=\"width:18%\">Contributor</td><td style=\"width:12%\">Logo</td></tr>";
 
   //Article/content title--------------
+  tipsOutput += "<tr><td>";
   tipsOutput += "<a href=\"" + obj.link + "\"";
 
   //If external site or page, launch in new browser tab
@@ -200,6 +216,8 @@ function buildTips(obj) {
   tipsOutput += obj.logo;
   tipsOutput += "\" alt=\"Contributor Logo\" class=\"center-block\" height=\"48\" width=\"48\"/></a>";
   tipsOutput += "</td></tr>";
+
+  seenArr[3] = true;
 }
 
 

@@ -650,7 +650,7 @@ function buildServices(obj) {
 }
 
 //-----------------------------------------------------
-//  otherOutput - - renamed "Events, Travel, and Leisure" Jan 20187
+//  otherOutput - - renamed "Events, Travel, and Leisure" Jan 2018
 //-----------------------------------------------------
 function buildOther(obj) {
   otherOutput += "<tr><td scope=\"row\">";
