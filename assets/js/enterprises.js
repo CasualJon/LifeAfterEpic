@@ -320,7 +320,7 @@ var ventures = [
     parent: null,
   },
   { name: "Consultapotamus",
-    website: "https://consultapotamus.com",
+    website: "https://consultapotamus.com/about.php",
     logo: "../assets/img/ventures/consultapotamus.png",
     twitter: "https://twitter.com/consultapotamus",
     linkedin: "https://www.linkedin.com/company/consultapotamus/",
